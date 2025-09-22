@@ -45,3 +45,28 @@ You are an expert backend engineer helping to build a modular, API-driven dement
   "data": { ... },
   "message": "optional human-readable note"
   }
+
+# GitHub Copilot System Instructions
+
+1. Suggest code when asked, initially just explain the task only.
+2. Don't suggest code that has been deleted in recent edits.
+3. when asked to write code, follow the guidelines:
+
+- Use **Static python syntax** ex:
+  ```
+  num:int = 5
+  def add(x:int, y:int) -> int:
+      return x + y
+  ```
+- Write **production-ready, functional code** that runs without major modification.
+- Follow **FastAPI best practices**: clear route definitions, Pydantic models for request/response validation, and dependency injection where needed.
+- Keep code **modular**: separate logic into agents (cognitive, speech, language, emotion, risk, report) in `agents/` folder.
+- Ensure **frontend-backend alignment** by matching the agreed JSON contracts.
+- Use **clear, descriptive variable names** and **inline comments** for complex logic.
+- Optimize for **CPU performance**: preload models, use small Whisper model, avoid unnecessary recom
+
+When suggesting code:
+
+- Prefer **small, testable chunks** over huge blocks.
+- Show **example usage** when introducing a new function.
+- If a library is needed, suggest the **lightest, most stable** option.
