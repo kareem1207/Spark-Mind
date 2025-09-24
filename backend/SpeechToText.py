@@ -54,7 +54,7 @@ class SpeechToTextAnalyzer:
             self.audio_path,
             fp16=False,
             word_timestamps=True,
-        )
+        ) 
         if self.save_json_path:
             with open(self.save_json_path, "w", encoding="utf-8") as f:
                 js.dump(result, f, ensure_ascii=False, indent=4)
