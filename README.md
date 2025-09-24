@@ -1,3 +1,44 @@
+---
+
+## Backend API (FastAPI)
+
+Run backend:
+
+```bash
+cd backend
+pip install -r requirements.txt
+python -m uvicorn main:app --reload
+```
+
+Endpoints:
+
+- GET /api/health – health check
+- POST /api/assessment – trigger assessment. Body:
+    ```json
+    {"scores":{"stroop_colour":0,"memory_game":0,"matching_object_purpose":0},"skip_audio":true,"fast":false,"offline_sentiment":false}
+    ```
+    Returns risk object, pdf filename, summary excerpt, and scores.
+- GET /api/assessment/latest – latest PDF filename
+- GET /api/reports/{filename} – download PDF
+
+Frontend env var: `NEXT_PUBLIC_API_BASE` (defaults to http://localhost:8000)
+
+## Frontend Demo Trigger
+
+Homepage button "Generate Assessment" (in `page.js`) calls backend with placeholder scores and renders risk + PDF link.
+
+## Roadmap
+
+- Real game score integration
+- Firebase auth token on requests
+- User-specific history storage
+- Streaming progress (SSE/WebSocket) for long audio
+- Error boundary & retry UI
+
+## Architecture Diagram
+
+See `docs/architecture.drawio` (open in draw.io / diagrams.net) for the full system architecture and data flow.
+
 # Project Guidelines
 
 This document outlines the development and documentation standards for this project. All team members are expected to follow these guidelines.

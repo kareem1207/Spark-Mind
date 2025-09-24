@@ -1,13 +1,13 @@
 import { getAuthSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import DashboardClient from "@/components/DashboardClient";
+import SpeechTestClient from "@/components/games/SpeechTestClient";
 
-export default async function Dashboard() {
+export default async function SpeechTest() {
   const session = await getAuthSession();
 
   if (!session) {
     redirect("/auth/signin");
   }
 
-  return <DashboardClient session={session} />;
+  return <SpeechTestClient />;
 }

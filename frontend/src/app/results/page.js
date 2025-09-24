@@ -1,13 +1,13 @@
 import { getAuthSession } from "@/lib/auth";
 import { redirect } from "next/navigation";
-import DashboardClient from "@/components/DashboardClient";
+import ResultsClient from "@/components/ResultsClient";
 
-export default async function Dashboard() {
+export default async function Results() {
   const session = await getAuthSession();
 
   if (!session) {
     redirect("/auth/signin");
   }
 
-  return <DashboardClient session={session} />;
+  return <ResultsClient session={session} />;
 }
