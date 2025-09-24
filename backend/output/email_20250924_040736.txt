@@ -1,0 +1,17 @@
+Subject: Cognitive Assessment Results - Thank You
+
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate your participation.
+
+This assessment analyzed speech patterns and cognitive skills, though some game scores are currently placeholders. Key metrics included speech fluency, pause density, lexical diversity, and sentiment analysis. Your results showed a high pause density, suggesting potential challenges in speech fluency, and an unusually high speech fluency rate that requires validation. Sentiment analysis indicated a neutral overall sentiment.
+
+Please remember, this assessment is AI-driven and not a substitute for professional medical advice. If you have concerns about your cognitive health, it is important to consult with a qualified healthcare professional.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps to understand your cognitive health is a positive move. We hope this assessment provides helpful insights.
+
+Sincerely,
+
+The Patient Engagement Team

@@ -1,0 +1,28 @@
+{
+  "stroop_colour": 0,
+  "memory_game": 0,
+  "matching_object_purpose": 0,
+  "speech_metrics": {
+    "Total time": 18.8,
+    "Total pause time": 16.360000000000003,
+    "Pause density (%)": 46.5301,
+    "Repeated words": 14.0,
+    "Filler words": 5.0,
+    "Filler frequency (%)": 9.0909,
+    "Unique words": 34.0,
+    "Lexical diversity (%)": 61.8182,
+    "Speech fluency (words/sec)": 56.17
+  },
+  "sentiment": {
+    "label": "neutral",
+    "probs": [
+      0.041262440383434296,
+      0.057597316801548004,
+      0.7074972987174988,
+      0.1441834270954132,
+      0.04945945367217064
+    ],
+    "weighted_score": 62.06
+  },
+  "transcribed_text": " E. You woke up late today. Um, then I went to the kitchen, and I, uh, I made tea. I sat down, sat down in the chair and, and just stared at the clock. You know, I was thinking about the river, the river near my old house. Mango trees, paper boats, it's A."
+}
