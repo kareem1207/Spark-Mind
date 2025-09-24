@@ -1,0 +1,26 @@
+**Summary:**
+
+This cognitive assessment report analyzes data from cognitive games (Stroop Colour, Memory Recall, Object-Purpose Matching) and a speech sample to provide insights into cognitive function. Currently, the cognitive game scores are all 0, indicating either non-completion or pending implementation. The speech analysis reveals a total time of 18.8 seconds, with a high pause density of 46.53% (Total Pause Time: 16.36 seconds), 14 repeated words, 5 filler words (Filler Frequency: 9.09%), 34 unique words, and a Lexical Diversity of 61.82%. Speech Fluency is reported at 56.17 words/sec but is likely an error. Sentiment analysis indicates a neutral emotional tone (Weighted Score: 62.06), with probabilities of Negative: 0.041, Neutral: 0.707, and Positive: 0.144. The high pause density and filler word usage suggest potential fluency issues warranting further investigation.
+
+**Highlights:**
+
+*   **Stroop Colour, Memory Game, Matching Object-Purpose:** Scores are 0, indicating incomplete or pending implementation.
+*   **Total Pause Time:** 16.36 seconds, contributing to a high pause density.
+*   **Pause Density:** 46.53%, suggesting potential speech fluency issues.
+*   **Filler Frequency:** 9.09%, further supporting potential fluency concerns.
+*   **Lexical Diversity:** 61.82%, within a normal range but potentially lower than expected.
+*   **Sentiment Analysis:** Neutral, Weighted Score: 62.06.
+*   **Total Time:** 18.8 seconds
+*   **Repeated Words:** 14.0
+*   **Unique Words:** 34.0
+*   **Speech Fluency:** 56.17 words/sec (likely an error)
+
+**Next Steps:**
+
+*   [ ] Complete the Stroop Colour, Memory Game, and Object-Purpose Matching tasks.
+*   [ ] Obtain a comprehensive speech and language evaluation by a speech-language pathologist.
+*   [ ] Consider a neurological consultation to rule out underlying neurological conditions.
+*   [ ] Implement regular monitoring of cognitive function.
+*   [ ] Investigate any contextual factors (stress, anxiety, fatigue) influencing speech.
+
+DISCLAIMER:It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
