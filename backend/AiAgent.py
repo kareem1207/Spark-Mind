@@ -12,7 +12,6 @@ import yaml
 
 from SpeechToText import SpeechToTextAnalyzer
 from SentimentAnalyzer import SentimentAnalyzer
-
 # Optional search tool (Google freshness) via Serper (Google Search API)
 def _init_search_tool():  # lazy import to avoid hard failure if key missing
 	api_key = os.getenv("SERPER_API_KEY")
@@ -110,7 +109,64 @@ def collect_scores(audio_path: Optional[str] = None, skip_audio: bool = False, f
 	return bundle
 
 
-def build_doctor_prompt(scores: Dict[str, Any], disclaimer: str) -> str:
+def compute_cognitive_risk(scores: Dict[str, Any]) -> Dict[str, Any]:
+	"""Heuristic dementia risk probability.
+
+	This is NOT a diagnosis. It combines a few proxy indicators from speech & sentiment:
+	- Higher pause density and filler frequency may correlate with executive/fluency issues.
+	- Lower lexical diversity may indicate reduced vocabulary richness or retrieval difficulty.
+	- Very negative sentiment weighting could reflect mood factors that can confound cognitive interpretation.
+
+	Produces a probability (0-1) and categorical label.
+	"""
+	sm = scores.get("speech_metrics", {}) or {}
+	sent = scores.get("sentiment", {}) or {}
+	pause = float(sm.get("Pause density (%)", 0.0))
+	filler_freq = float(sm.get("Filler frequency (%)", 0.0))
+	lex_div = float(sm.get("Lexical diversity (%)", 0.0))
+	fluency = float(sm.get("Speech fluency (words/sec)", 0.0))
+	weighted_sent = float(sent.get("weighted_score", 50.0))  # 0-100
+
+	# Normalize components into partial risk scores (0-1 bounds)
+	# Empirical scaling choices (placeholder heuristics):
+	r_pause = min(pause / 60.0, 1.0)          # 60% pause density => max risk component
+	r_filler = min(filler_freq / 30.0, 1.0)    # 30% filler freq => max
+	r_lex = 1.0 - min(lex_div / 70.0, 1.0)     # Lower diversity increases risk
+	r_flu = 1.0 - min(fluency / 90.0, 1.0)     # Lower fluency value increases risk
+	r_mood = 0.0
+	if weighted_sent < 40:
+		r_mood = 0.15
+	elif weighted_sent < 55:
+		r_mood = 0.05
+	elif weighted_sent > 80:
+		# Elevated positive affect alone not strongly protective; slight negative weight
+		r_mood = -0.03
+
+	raw = (0.25 * r_pause) + (0.2 * r_filler) + (0.25 * r_lex) + (0.25 * r_flu) + r_mood
+	raw = max(0.0, min(raw, 1.0))
+	if raw < 0.25:
+		category = "low"
+	elif raw < 0.45:
+		category = "mild"
+	elif raw < 0.65:
+		category = "moderate"
+	else:
+		category = "elevated"
+	return {
+		"probability": round(raw, 3),
+		"category": category,
+		"factors": {
+			"pause_density_pct": pause,
+			"filler_frequency_pct": filler_freq,
+			"lexical_diversity_pct": lex_div,
+			"speech_fluency": fluency,
+			"sentiment_weighted": weighted_sent,
+		},
+		"disclaimer": "Heuristic risk estimate only; not a medical diagnosis." 
+	}
+
+
+def build_doctor_prompt(scores: Dict[str, Any], disclaimer: str, risk: Dict[str, Any]) -> str:
 	sm = scores["speech_metrics"]
 	sent = scores["sentiment"]
 	base = {
@@ -119,11 +175,13 @@ def build_doctor_prompt(scores: Dict[str, Any], disclaimer: str) -> str:
 		"matching_object_purpose": scores["matching_object_purpose"],
 		"speech": sm,
 		"sentiment": sent,
+		"heuristic_cognitive_risk": risk,
 	}
 	return (
 		"You are to write a comprehensive cognitive assessment report. "
 		"Use ONLY the JSON metrics provided (do not fabricate missing game scores). "
 		"Explain methodology, interpretation, influencing factors (speech pauses, fillers, lexical diversity, sentiment), and recommendations. "
+		"Include a dedicated 'Heuristic Cognitive Risk Assessment' section that: (a) restates the provided probability (0-1) and categorical label, (b) explains contributing factors, (c) clearly states this is NOT a diagnosis, only a screening signal. "
 		"If additional up-to-date general cognitive health context is beneficial you may invoke the provided search tool.\n"
 		f"Metrics JSON: {json.dumps(base, indent=2)}\n"
 		f"Transcript (verbatim): {scores['transcribed_text'][:1200]}\n"
@@ -134,7 +192,7 @@ def build_doctor_prompt(scores: Dict[str, Any], disclaimer: str) -> str:
 def build_summary_prompt(doctor_report: str, disclaimer: str) -> str:
 	return (
 		"Summarize the following clinical-style report into: (1) concise paragraph, (2) bullet highlights, (3) next steps checklist. "
-		"Preserve numeric values. End with the disclaimer.\n" + doctor_report + "\nDISCLAIMER:" + disclaimer
+		"Preserve numeric values. Explicitly state the heuristic cognitive risk category & probability (do not re-calc). End with the disclaimer.\n" + doctor_report + "\nDISCLAIMER:" + disclaimer
 	)
 
 
@@ -206,12 +264,13 @@ def run_pipeline(audio_path: Optional[str] = None, skip_audio: bool = False, fas
 
 	# Doctor report
 	evaluator_agent = _mk_agent("clinical_evaluator", verbose=True)
+	risk = compute_cognitive_risk(scores)
 	doctor_task = Task(
-		description=build_doctor_prompt(scores, disclaimer),
+		description=build_doctor_prompt(scores, disclaimer, risk),
 		agent=evaluator_agent,
 		expected_output=(
 			"A detailed structured report with sections: Overview, Metrics Explanation, Speech Analysis, Sentiment Analysis, "
-			"Integrated Interpretation, Recommendations, Disclaimer"
+			"Heuristic Cognitive Risk Assessment, Integrated Interpretation, Recommendations, Disclaimer"
 		),
 	)
 	print("[STAGE] Running clinical evaluator agent...")
@@ -262,6 +321,7 @@ def run_pipeline(audio_path: Optional[str] = None, skip_audio: bool = False, fas
 
 	return {
 		"scores": scores,
+		"risk": risk,
 		"doctor_report": doctor_report,
 		"summary": summary_text,
 		"email": email_text,

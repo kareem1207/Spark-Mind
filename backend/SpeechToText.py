@@ -78,7 +78,7 @@ class SpeechToTextAnalyzer:
         for segment in transcription.get("segments", []):
             total_time = max(total_time, float(segment.get("end", 0)))
             seg_len = abs(float(segment.get("end", 0)) - float(segment.get("start", 0)))
-            if seg_len > 0.8:
+            if seg_len >= 1.5:
                 total_pause_time += seg_len
 
         pause_density: float = np.round(
