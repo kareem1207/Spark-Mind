@@ -1,0 +1,135 @@
+'use client'
+
+import Image from 'next/image'
+import Link from 'next/link'
+
+export default function Home() {
+  return (
+    <div className="min-h-screen">
+      {/* Navigation */}
+      <nav className="fixed w-full z-50 bg-white bg-opacity-95 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between h-16 items-center">
+            <div className="flex-shrink-0">
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="/brain-spark-logo.svg"
+                  alt="Brain Spark"
+                  width={40}
+                  height={40}
+                  className="h-10 w-auto"
+                />
+                <span className="ml-2 text-xl font-semibold text-blue-900">Early Spark</span>
+              </Link>
+            </div>
+            <div className="hidden sm:flex sm:space-x-8">
+              <Link href="/" className="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">
+                Home
+              </Link>
+              <Link href="/learn" className="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">
+                Learn
+              </Link>
+              <Link href="/contact" className="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">
+                Contact
+              </Link>
+              <Link href="/quick-check" className="text-blue-900 hover:text-blue-700 px-3 py-2 font-medium">
+                Quick Check
+              </Link>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main>
+        {/* Hero Section with Questions */}
+        <section className="min-h-screen bg-gradient-to-b from-blue-900 to-blue-700 pt-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+            <div className="text-center space-y-8 text-white py-20">
+              <h1 className="text-5xl sm:text-6xl font-semibold italic">
+                <span className="font-normal">Forgot</span> where you left something??
+              </h1>
+              <h1 className="text-5xl sm:text-6xl font-semibold">
+                Recognized someone but Name <span className="italic">Escapes</span>??
+              </h1>
+              <h1 className="text-5xl sm:text-6xl font-semibold">
+                Tasks fell <span className="italic">trickier</span> than usual??
+              </h1>
+              <p className="mt-16 text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                We agree—life comes with little bumps, That's okay, we've got you. Take a moment for yourself. 
+                Explore, stay curious, and keep your mind active.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Understanding Brain Health Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-4xl font-bold text-center text-blue-900 mb-16">
+              Understanding <span className="italic">Brain</span> Health
+            </h2>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* Dementia Information */}
+              <div className="bg-blue-50 rounded-3xl p-8">
+                <div className="flex items-start space-x-4">
+                  <Image 
+                    src="/brain-icon.svg" 
+                    alt="Brain Icon" 
+                    width={24} 
+                    height={24}
+                    className="text-pink-500 mt-1"
+                  />
+                  <div>
+                    <h3 className="text-2xl font-semibold text-blue-900 mb-4">Dementia</h3>
+                    <p className="text-lg text-blue-800 mb-4">
+                      Dementia is a condition that <span className="italic">affects memory, thinking, and behavior</span>.
+                    </p>
+                    <p className="text-lg text-blue-800">
+                      It is not a <span className="font-medium">normal</span> part of aging, but it becomes more{' '}
+                      <span className="italic">common</span> as people grow <span className="italic">older</span>.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Types and Signs */}
+              <div className="space-y-8">
+                <div className="bg-blue-50 rounded-3xl p-8">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-4">Common Types:</h3>
+                  <ul className="space-y-2 text-lg text-blue-800">
+                    <li>• Alzheimers</li>
+                    <li>• Lewy Body</li>
+                    <li>• Frontotemporal</li>
+                  </ul>
+                </div>
+
+                <div className="bg-blue-50 rounded-3xl p-8">
+                  <h3 className="text-xl font-semibold text-blue-900 mb-4">Early Signs to look for:</h3>
+                  <ul className="space-y-2 text-lg text-blue-800">
+                    <li>• Memory loss</li>
+                    <li>• Trouble with daily tasks</li>
+                    <li>• Confusion with time or place</li>
+                    <li>• Mood or personality changes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Quick Game Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <Link 
+              href="/games" 
+              className="text-4xl font-semibold text-blue-900 hover:text-blue-700 transition-colors duration-200"
+            >
+              Take a Quick Game!
+            </Link>
+          </div>
+        </section>
+      </main>
+    </div>
+  )
+}
