@@ -1,23 +1,66 @@
-# Spark Mind Architecture
+# Spark Mind - Dementia Early Detection System Architecture
 
-Below is a Mermaid diagram (fallback textual architecture) in case the `.drawio` file does not render in your environment.
+## Overview
+
+The Spark Mind system is a comprehensive web-based platform for early dementia detection through cognitive assessments. It combines four different cognitive games with AI-powered analysis to provide risk assessments and detailed reports.
+
+## System Architecture
 
 ```mermaid
-graph LR
-  A[User Browser\nNext.js UI] --> B[SessionProvider / Auth]
-  B --> C[Games UI\nMemory / Stroop / Word Recall / Speech]
-  C --> D[Frontend API Client]
-  D -->|JSON / multipart| E[FastAPI Backend]
-  C -->|Speech audio (webm)| E
-  E --> F[AiAgent Pipeline]
-  F --> G[SpeechToText]
-  F --> H[SentimentAnalyzer]
-  F --> I[Heuristic Risk Scoring]
-  F --> J[CrewAI Agents\nReport / Summary / Email]
-  J --> K[Outputs: PDF, Summary, Email, metrics.json]
-  E -->|Serve static| K
-  F --> L[(Model Cache)]
-  E --> M[(Future User DB)]
+graph TB
+    subgraph "Frontend Layer (Next.js)"
+        A[User Interface]
+        B[Authentication System]
+        C[Cognitive Games Suite]
+        D[Dashboard & Results]
+        E[API Integration Layer]
+    end
+    
+    subgraph "Backend Layer (Python/FastAPI)"
+        F[REST API Endpoints]
+        G[AI Analysis Pipeline]
+        H[Data Processing]
+        I[Report Generation]
+    end
+    
+    subgraph "AI Services"
+        J[Speech-to-Text Service]
+        K[Sentiment Analysis]
+        L[Risk Assessment Engine]
+        M[Report Generation AI]
+    end
+    
+    subgraph "Data Storage"
+        N[(User Data)]
+        O[(Game Results)]
+        P[(Audio Files)]
+        Q[(Generated Reports)]
+    end
+    
+    subgraph "External Services"
+        R[Google OAuth 2.0]
+        S[OpenAI GPT API]
+        T[Cloud Speech API]
+    end
+    
+    A --> B
+    B --> R
+    C --> E
+    D --> E
+    E --> F
+    F --> G
+    G --> J
+    G --> K
+    G --> L
+    G --> M
+    J --> T
+    K --> S
+    L --> S
+    M --> S
+    H --> N
+    H --> O
+    H --> P
+    I --> Q
 ```
 
 ## Component Responsibilities
