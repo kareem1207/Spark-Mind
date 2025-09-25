@@ -1,0 +1,107 @@
+<mxfile host="65bd71144e">
+    <diagram id="spark-mind-simple" name="Spark Mind Architecture">
+        <mxGraphModel dx="979" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="700" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Early Spark - Dementia Early Detection System" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="150" y="20" width="600" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="frontend" value="Frontend&#xa;(Next.js + React)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="100" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="games" value="Cognitive Games Suite" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="200" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="stroop" value="Stroop Test" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="20" y="270" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="memory" value="Memory Game" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="110" y="270" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="matching" value="Object Matching" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="270" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="speech" value="Speech Fluency" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="270" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="backend" value="Backend API&#xa;(Python + FastAPI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=16;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="100" width="250" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai-pipeline" value="AI Analysis Pipeline" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="200" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="speech-to-text" value="Speech-to-Text" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="270" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="sentiment" value="Sentiment&#xa;Analysis" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="467" y="270" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="risk-assessment" value="Risk&#xa;Assessment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="567" y="270" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="dashboard" value="Dashboard &amp; Analytics" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="100" width="180" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="charts" value="Interactive&#xa;Charts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="620" y="200" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="reports" value="PDF Reports" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="200" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="external" value="External Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="350" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="google-auth" value="Google OAuth" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="30" y="420" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="gemini" value="Gemini AI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="420" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="storage" value="Data Storage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="350" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="user-data" value="User&#xa;Profiles" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="420" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="game-data" value="Game&#xa;Results" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="420" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="audio-data" value="Audio&#xa;Files" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="420" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="features" value="Key Features" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="350" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="feature-list" value="• Real-time cognitive assessment&#xa;• AI-powered speech analysis&#xa;• Risk scoring &amp; visualization&#xa;• Comprehensive PDF reports&#xa;• Non-diagnostic insights" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=1;fontSize=10;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="420" width="200" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow" value="User Flow: Login → Play Games → AI Analysis → View Results → Download Report" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontSize=12;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                    <mxGeometry x="50" y="530" width="750" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="frontend-to-backend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#666666;strokeWidth=2;" parent="1" source="frontend" target="backend" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="games-to-ai" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#82b366;strokeWidth=2;" parent="1" source="games" target="ai-pipeline" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="ai-to-dashboard" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#9673a6;strokeWidth=2;" parent="1" source="ai-pipeline" target="dashboard" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="backend-to-storage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeColor=#b85450;strokeWidth=2;" parent="1" source="backend" target="storage" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="590" y="160"/>
+                            <mxPoint x="590" y="250"/>
+                            <mxPoint x="510" y="250"/>
+                            <mxPoint x="510" y="350"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="external-to-backend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeColor=#d6b656;strokeWidth=2;" parent="1" source="external" target="backend" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
