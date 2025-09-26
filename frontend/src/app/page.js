@@ -75,7 +75,84 @@ export default function Home() {
 
   return (
     <div className="overflow-hidden">
-      {/* Hero Section */}
+      {/* Mindful Moment Hero Card */}
+      <section className="min-h-screen flex flex-col items-center justify-center text-center text-white relative overflow-hidden">
+        {/* Background Gradient */}
+        <div
+          className="absolute inset-0 w-full h-full animate-gradient"
+          style={{
+            background:
+              "linear-gradient(-45deg, #2e4156, #587c90, #1e3a8a, #0891b2)",
+            backgroundSize: "400% 400%",
+          }}
+        ></div>
+
+        {/* Content */}
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8 text-[#f3efec]">
+          <div className="text-3xl sm:text-4xl lg:text-5xl leading-relaxed mb-8 font-medium">
+            <div className="block mb-2">
+              <span style={{ fontStyle: "italic", color: "#ffffff" }}>
+                Forgot
+              </span>{" "}
+              where you left something??
+            </div>
+            <div className="block mb-2" style={{ color: "#f3efec" }}>
+              Recognized someone but Name{" "}
+              <span style={{ fontStyle: "italic", color: "#ffffff" }}>
+                Escapes
+              </span>
+              ??
+            </div>
+            <div className="block">
+              Tasks felt{" "}
+              <span style={{ fontStyle: "italic", color: "#ffffff" }}>
+                trickier
+              </span>{" "}
+              than usual??
+            </div>
+          </div>
+
+          <div className="text-lg sm:text-xl max-w-lg mx-auto mb-12 opacity-90 leading-relaxed font-light">
+            We agree—life comes with little bumps. That's okay, we've got you.
+            Take a moment for yourself. Explore, stay curious, and keep your
+            mind active.
+          </div>
+
+          <div className="text-3xl animate-bounce">⬇</div>
+        </div>
+
+        {/* CSS Animation */}
+        <style jsx>{`
+          @keyframes bounce {
+            0%,
+            100% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(10px);
+            }
+          }
+          @keyframes gradient {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+          .animate-bounce {
+            animation: bounce 1.5s infinite;
+          }
+          .animate-gradient {
+            animation: gradient 8s ease infinite;
+          }
+        `}</style>
+      </section>
+
+      {/* Early Spark Hero Section */}
       <section className="relative py-20 lg:py-32">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
