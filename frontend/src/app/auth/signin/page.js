@@ -32,18 +32,29 @@ export default function SignIn() {
             <div className="text-center md:text-left">
               <div className="flex items-center justify-center md:justify-start space-x-3 mb-6">
                 <div className="relative">
-                  <Brain className="h-12 w-12 text-indigo-600" />
-                  <div className="absolute -inset-1 bg-indigo-100 rounded-full opacity-50 animate-pulse"></div>
+                  <Brain className="h-12 w-12" style={{ color: "#2e4156" }} />
+                  <div
+                    className="absolute -inset-1 rounded-full opacity-50 animate-pulse"
+                    style={{ backgroundColor: "#c7d9e5" }}
+                  ></div>
                 </div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                  SparkMind
+                <span
+                  className="text-2xl font-bold"
+                  style={{ color: "#2e4156" }}
+                >
+                  Early Spark
                 </span>
               </div>
-              <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
+              <h1
+                className="text-4xl font-extrabold mb-4"
+                style={{ color: "#2e4156" }}
+              >
                 Early Detection,
-                <span className="text-indigo-600 block">Better Outcomes</span>
+                <span className="block" style={{ color: "#587c90" }}>
+                  Better Outcomes
+                </span>
               </h1>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-lg mb-8" style={{ color: "#587c90" }}>
                 Advanced cognitive assessment system powered by AI to detect
                 early signs of dementia through interactive games and
                 comprehensive analysis.
@@ -54,25 +65,25 @@ export default function SignIn() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <div className="flex-shrink-0">
-                  <Shield className="h-6 w-6 text-green-500" />
+                  <Shield className="h-6 w-6" style={{ color: "#587c90" }} />
                 </div>
-                <span className="text-gray-700">
+                <span style={{ color: "#2e4156" }}>
                   Secure and confidential assessment
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="flex-shrink-0">
-                  <Zap className="h-6 w-6 text-yellow-500" />
+                  <Zap className="h-6 w-6" style={{ color: "#587c90" }} />
                 </div>
-                <span className="text-gray-700">
+                <span style={{ color: "#2e4156" }}>
                   Quick 15-minute comprehensive test
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <div className="flex-shrink-0">
-                  <Users className="h-6 w-6 text-blue-500" />
+                  <Users className="h-6 w-6" style={{ color: "#587c90" }} />
                 </div>
-                <span className="text-gray-700">
+                <span style={{ color: "#2e4156" }}>
                   Trusted by healthcare professionals
                 </span>
               </div>
@@ -119,8 +130,11 @@ export default function SignIn() {
               <ArrowRight className="ml-3 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button>
 
-            <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <p className="text-sm text-blue-800">
+            <div
+              className="mt-8 p-4 rounded-lg border"
+              style={{ backgroundColor: "#f0f9ff", borderColor: "#bae6fd" }}
+            >
+              <p className="text-sm" style={{ color: "#1e3a8a" }}>
                 <strong>Note:</strong> Your privacy is our priority. All
                 assessment data is encrypted and processed securely according to
                 HIPAA standards.
@@ -131,11 +145,19 @@ export default function SignIn() {
             <div className="mt-8 text-center">
               <p className="text-xs text-gray-500">
                 By signing in, you agree to our{" "}
-                <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                <a
+                  href="#"
+                  style={{ color: "#0891b2" }}
+                  className="hover:underline"
+                >
                   Terms of Service
                 </a>{" "}
                 and{" "}
-                <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                <a
+                  href="#"
+                  style={{ color: "#0891b2" }}
+                  className="hover:underline"
+                >
                   Privacy Policy
                 </a>
               </p>
@@ -144,10 +166,19 @@ export default function SignIn() {
         </div>
 
         {/* Bottom Decorative Elements */}
-        <div className="flex justify-center items-center space-x-8 opacity-20">
-          <Image src="/next.svg" alt="Next.js" width={60} height={60} />
-          <Image src="/vercel.svg" alt="Vercel" width={60} height={60} />
-          <Image src="/file.svg" alt="Secure" width={60} height={60} />
+        <div className="flex justify-center items-center space-x-8 opacity-10">
+          <div
+            className="w-16 h-16 rounded-full"
+            style={{ backgroundColor: "#e0f2fe" }}
+          ></div>
+          <div
+            className="w-12 h-12 rounded-full"
+            style={{ backgroundColor: "#bae6fd" }}
+          ></div>
+          <div
+            className="w-20 h-20 rounded-full"
+            style={{ backgroundColor: "#f0f9ff" }}
+          ></div>
         </div>
       </div>
     </div>

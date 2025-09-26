@@ -25,8 +25,8 @@ export default function GamesClient({ session }) {
       icon: "🎨",
       difficulty: "Medium",
       duration: "5 minutes",
-      color: "from-purple-500 to-indigo-600",
-      bgColor: "from-purple-50 to-indigo-50",
+      color: "from-early-spark-navy to-early-spark-teal",
+      bgColor: "from-early-spark-beige to-early-spark-white",
       features: ["Reaction Time", "Cognitive Flexibility", "Attention Control"],
       href: "/games/stroop",
     },
@@ -38,8 +38,8 @@ export default function GamesClient({ session }) {
       icon: "🧩",
       difficulty: "Easy",
       duration: "3-8 minutes",
-      color: "from-blue-500 to-cyan-600",
-      bgColor: "from-blue-50 to-cyan-50",
+      color: "from-early-spark-teal to-early-spark-sky-blue",
+      bgColor: "from-early-spark-sky-blue to-early-spark-white",
       features: ["Working Memory", "Pattern Recognition", "Visual Processing"],
       href: "/games/memory",
     },
@@ -51,8 +51,8 @@ export default function GamesClient({ session }) {
       icon: "🔗",
       difficulty: "Medium",
       duration: "4 minutes",
-      color: "from-green-500 to-emerald-600",
-      bgColor: "from-green-50 to-emerald-50",
+      color: "from-early-spark-navy to-early-spark-teal",
+      bgColor: "from-early-spark-beige to-early-spark-sky-blue",
       features: ["Semantic Memory", "Visual Recognition", "Logical Reasoning"],
       href: "/games/matching",
     },
@@ -64,8 +64,8 @@ export default function GamesClient({ session }) {
       icon: "🎤",
       difficulty: "Easy",
       duration: "2 minutes",
-      color: "from-orange-500 to-yellow-600",
-      bgColor: "from-orange-50 to-yellow-50",
+      color: "from-early-spark-teal to-early-spark-sky-blue",
+      bgColor: "from-early-spark-sky-blue to-early-spark-beige",
       features: ["Speech Fluency", "Language Processing", "Verbal Memory"],
       href: "/games/speech",
     },
@@ -74,28 +74,28 @@ export default function GamesClient({ session }) {
   const getDifficultyColor = (difficulty) => {
     switch (difficulty) {
       case "Easy":
-        return "bg-green-100 text-green-800";
+        return "bg-early-spark-sky-blue text-early-spark-navy";
       case "Medium":
-        return "bg-yellow-100 text-yellow-800";
+        return "bg-early-spark-teal text-early-spark-white";
       case "Hard":
         return "bg-red-100 text-red-800";
       default:
-        return "bg-gray-100 text-gray-800";
+        return "bg-early-spark-beige text-early-spark-teal";
     }
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8">
+    <div className="min-h-screen bg-gradient-early-spark-neutral py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center space-x-3 mb-6">
-            <Gamepad2 className="h-12 w-12 text-indigo-600" />
-            <h1 className="text-4xl font-bold text-gray-900">
+            <Gamepad2 className="h-12 w-12 text-early-spark-navy" />
+            <h1 className="text-4xl font-bold text-early-spark-navy">
               Cognitive Assessment Games
             </h1>
           </div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-early-spark-teal max-w-3xl mx-auto">
             Choose from our scientifically-validated games to assess different
             aspects of your cognitive function. Each game targets specific
             cognitive domains and provides detailed performance analytics.
@@ -199,7 +199,11 @@ export default function GamesClient({ session }) {
               {/* Action Button */}
               <Link
                 href={game.href}
-                className={`group/btn inline-flex items-center justify-center w-full bg-gradient-to-r ${game.color} text-white px-6 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition-all transform group-hover:scale-105`}
+                className="group/btn inline-flex items-center justify-center w-full px-6 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition-all transform group-hover:scale-105 text-white"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #2e4156 0%, #587c90 100%)",
+                }}
               >
                 <Play className="mr-2 h-5 w-5" />
                 Start Assessment
@@ -227,30 +231,52 @@ export default function GamesClient({ session }) {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="text-center p-6 bg-blue-50 rounded-xl">
-              <Brain className="h-8 w-8 text-blue-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Stay Focused</h3>
-              <p className="text-sm text-gray-600">
+            <div
+              className="text-center p-6 rounded-xl"
+              style={{ backgroundColor: "#c7d9e5" }}
+            >
+              <Brain
+                className="h-8 w-8 mx-auto mb-3"
+                style={{ color: "#2e4156" }}
+              />
+              <h3 className="font-semibold mb-2" style={{ color: "#2e4156" }}>
+                Stay Focused
+              </h3>
+              <p className="text-sm" style={{ color: "#587c90" }}>
                 Find a quiet environment and minimize distractions for the most
                 accurate assessment.
               </p>
             </div>
 
-            <div className="text-center p-6 bg-green-50 rounded-xl">
-              <Zap className="h-8 w-8 text-green-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">Be Natural</h3>
-              <p className="text-sm text-gray-600">
+            <div
+              className="text-center p-6 rounded-xl"
+              style={{ backgroundColor: "#f3efec" }}
+            >
+              <Zap
+                className="h-8 w-8 mx-auto mb-3"
+                style={{ color: "#587c90" }}
+              />
+              <h3 className="font-semibold mb-2" style={{ color: "#2e4156" }}>
+                Be Natural
+              </h3>
+              <p className="text-sm" style={{ color: "#587c90" }}>
                 Respond naturally and don't overthink. Your first instinct is
                 often the most telling.
               </p>
             </div>
 
-            <div className="text-center p-6 bg-purple-50 rounded-xl">
-              <Award className="h-8 w-8 text-purple-600 mx-auto mb-3" />
-              <h3 className="font-semibold text-gray-900 mb-2">
+            <div
+              className="text-center p-6 rounded-xl"
+              style={{ backgroundColor: "#c7d9e5" }}
+            >
+              <Award
+                className="h-8 w-8 mx-auto mb-3"
+                style={{ color: "#2e4156" }}
+              />
+              <h3 className="font-semibold mb-2" style={{ color: "#2e4156" }}>
                 Complete Series
               </h3>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm" style={{ color: "#587c90" }}>
                 Take all assessments in one session for the most comprehensive
                 cognitive profile.
               </p>

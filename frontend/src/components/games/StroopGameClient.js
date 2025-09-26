@@ -180,14 +180,20 @@ export default function StroopGameClient() {
 
   if (gameState === "instructions") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50 py-8">
+      <div
+        className="min-h-screen py-8"
+        style={{
+          background:
+            "linear-gradient(135deg, #f7fafc 0%, #e2e8f0 50%, #cbd5e0 100%)",
+        }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <Brain className="h-12 w-12 text-purple-600" />
+              <Brain className="h-12 w-12" style={{ color: "#1e3a8a" }} />
               <h1 className="text-3xl font-bold text-gray-900">
-                Stroop Color Test
+                Early Spark Stroop Test
               </h1>
             </div>
             <p className="text-lg text-gray-600">
@@ -203,8 +209,13 @@ export default function StroopGameClient() {
 
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-purple-600 font-semibold">1</span>
+                <div
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: "#e0f2fe" }}
+                >
+                  <span className="font-semibold" style={{ color: "#0891b2" }}>
+                    1
+                  </span>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
@@ -219,8 +230,13 @@ export default function StroopGameClient() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-purple-600 font-semibold">2</span>
+                <div
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: "#e0f2fe" }}
+                >
+                  <span className="font-semibold" style={{ color: "#0891b2" }}>
+                    2
+                  </span>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
@@ -234,8 +250,13 @@ export default function StroopGameClient() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center">
-                  <span className="text-purple-600 font-semibold">3</span>
+                <div
+                  className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                  style={{ backgroundColor: "#e0f2fe" }}
+                >
+                  <span className="font-semibold" style={{ color: "#0891b2" }}>
+                    3
+                  </span>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 mb-2">
@@ -263,7 +284,10 @@ export default function StroopGameClient() {
                   </p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-blue-500 mb-2">
+                  <div
+                    className="text-4xl font-bold mb-2"
+                    style={{ color: "#0891b2" }}
+                  >
                     BLUE
                   </div>
                   <p className="text-sm text-gray-600">
@@ -278,7 +302,21 @@ export default function StroopGameClient() {
           <div className="text-center">
             <button
               onClick={startGame}
-              className="group bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-purple-700 hover:to-indigo-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+              className="group text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+              style={{
+                background: "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)",
+                boxShadow: "0 4px 20px rgba(30, 58, 138, 0.3)",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e40af 0%, #0e7490 100%)";
+                e.target.style.boxShadow = "0 8px 30px rgba(30, 58, 138, 0.4)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)";
+                e.target.style.boxShadow = "0 4px 20px rgba(30, 58, 138, 0.3)";
+              }}
             >
               <Play className="mr-2 h-5 w-5" />
               Start Test
@@ -299,11 +337,17 @@ export default function StroopGameClient() {
 
   if (gameState === "completed") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-green-50 via-emerald-50 to-teal-50 py-8">
+      <div
+        className="min-h-screen py-8"
+        style={{
+          background:
+            "linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%)",
+        }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <CheckCircle className="h-12 w-12 text-green-600" />
+              <CheckCircle className="h-12 w-12" style={{ color: "#0891b2" }} />
               <h1 className="text-3xl font-bold text-gray-900">
                 Test Completed!
               </h1>
@@ -320,8 +364,14 @@ export default function StroopGameClient() {
             </h2>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-              <div className="text-center p-4 bg-blue-50 rounded-xl">
-                <div className="text-3xl font-bold text-blue-600 mb-2">
+              <div
+                className="text-center p-4 rounded-xl"
+                style={{ backgroundColor: "#f0f9ff" }}
+              >
+                <div
+                  className="text-3xl font-bold mb-2"
+                  style={{ color: "#1e3a8a" }}
+                >
                   {gameResults?.score}
                 </div>
                 <div className="text-sm text-gray-600">Total Score</div>
@@ -332,8 +382,14 @@ export default function StroopGameClient() {
                 </div>
                 <div className="text-sm text-gray-600">Accuracy</div>
               </div>
-              <div className="text-center p-4 bg-purple-50 rounded-xl">
-                <div className="text-3xl font-bold text-purple-600 mb-2">
+              <div
+                className="text-center p-4 rounded-xl"
+                style={{ backgroundColor: "#e0f2fe" }}
+              >
+                <div
+                  className="text-3xl font-bold mb-2"
+                  style={{ color: "#0891b2" }}
+                >
                   {gameResults?.avgResponseTime}ms
                 </div>
                 <div className="text-sm text-gray-600">Avg Response</div>
@@ -359,13 +415,13 @@ export default function StroopGameClient() {
                   </p>
                 )}
                 {gameResults?.avgResponseTime < 1000 && (
-                  <p className="flex items-center text-blue-600">
+                  <p className="flex items-center" style={{ color: "#0891b2" }}>
                     <Target className="h-4 w-4 mr-2" />
                     Fast response times indicate good processing speed.
                   </p>
                 )}
                 {gameResults?.score > 200 && (
-                  <p className="flex items-center text-purple-600">
+                  <p className="flex items-center" style={{ color: "#1e3a8a" }}>
                     <Brain className="h-4 w-4 mr-2" />
                     High score suggests excellent cognitive control.
                   </p>
@@ -378,14 +434,35 @@ export default function StroopGameClient() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => window.location.reload()}
-              className="bg-white text-purple-600 px-6 py-3 rounded-xl font-semibold border-2 border-purple-600 hover:bg-purple-50 transition-all inline-flex items-center justify-center"
+              className="bg-white px-6 py-3 rounded-xl font-semibold border-2 transition-all inline-flex items-center justify-center"
+              style={{
+                color: "#1e3a8a",
+                borderColor: "#1e3a8a",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.backgroundColor = "#f0f9ff";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.backgroundColor = "white";
+              }}
             >
               <RotateCcw className="mr-2 h-4 w-4" />
               Try Again
             </button>
             <button
               onClick={saveAndContinue}
-              className="group bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all inline-flex items-center justify-center"
+              className="group text-white px-6 py-3 rounded-xl font-semibold transition-all inline-flex items-center justify-center"
+              style={{
+                background: "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e40af 0%, #0e7490 100%)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)";
+              }}
             >
               <Home className="mr-2 h-4 w-4" />
               Back to Dashboard
@@ -399,16 +476,22 @@ export default function StroopGameClient() {
 
   // Playing state
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-indigo-50 to-blue-50 py-8">
+    <div
+      className="min-h-screen py-8"
+      style={{
+        background:
+          "linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #bae6fd 100%)",
+      }}
+    >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Game Header */}
         <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 mb-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Brain className="h-8 w-8 text-purple-600" />
+              <Brain className="h-8 w-8" style={{ color: "#1e3a8a" }} />
               <div>
                 <h1 className="text-xl font-bold text-gray-900">
-                  Stroop Color Test
+                  Early Spark Stroop Test
                 </h1>
                 <p className="text-sm text-gray-600">
                   Round {currentRound + 1}
@@ -418,7 +501,12 @@ export default function StroopGameClient() {
 
             <div className="flex items-center space-x-6">
               <div className="text-center">
-                <div className="text-2xl font-bold text-blue-600">{score}</div>
+                <div
+                  className="text-2xl font-bold"
+                  style={{ color: "#1e3a8a" }}
+                >
+                  {score}
+                </div>
                 <div className="text-xs text-gray-600">Score</div>
               </div>
               <div className="text-center">
@@ -452,7 +540,18 @@ export default function StroopGameClient() {
             </p>
             <button
               onClick={togglePause}
-              className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all inline-flex items-center"
+              className="text-white px-8 py-3 rounded-xl font-semibold transition-all inline-flex items-center"
+              style={{
+                background: "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e40af 0%, #0e7490 100%)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)";
+              }}
             >
               <Play className="mr-2 h-4 w-4" />
               Resume Game
@@ -481,7 +580,15 @@ export default function StroopGameClient() {
                 <button
                   key={index}
                   onClick={() => handleAnswer(color.name)}
-                  className="bg-white hover:bg-gray-50 border-2 border-gray-200 hover:border-purple-300 rounded-xl p-6 font-semibold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="bg-white hover:bg-gray-50 border-2 border-gray-200 rounded-xl p-6 font-semibold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  onMouseEnter={(e) => {
+                    e.target.style.borderColor = "#0891b2";
+                    e.target.style.backgroundColor = "#f0f9ff";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.borderColor = color.color;
+                    e.target.style.backgroundColor = "white";
+                  }}
                   style={{
                     borderColor: color.color,
                     color: color.color,

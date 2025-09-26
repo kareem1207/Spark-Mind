@@ -1,26 +1,70 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Early Spark Color Palette - Custom CSS for complex selectors */
+@layer components {
+  .bg-early-spark-navy { 
+    background-color: #2e4156;
+  }
+  .bg-early-spark-teal { 
+    background-color: #587c90;
+  }
+  .bg-early-spark-sky-blue { 
+    background-color: #c7d9e5;
+  }
+  .bg-early-spark-beige { 
+    background-color: #f3efec;
+  }
+  .bg-early-spark-white { 
+    background-color: #ffffff;
+  }
+
+  .text-early-spark-navy { 
+    color: #2e4156;
+  }
+  .text-early-spark-teal { 
+    color: #587c90;
+  }
+  .text-early-spark-sky-blue { 
+    color: #c7d9e5;
+  }
+  .text-early-spark-beige { 
+    color: #f3efec;
+  }
+  .text-early-spark-white { 
+    color: #ffffff;
+  }
+
+  .border-early-spark-navy { 
+    border-color: #2e4156;
+  }
+  .border-early-spark-teal { 
+    border-color: #587c90;
+  }
+  .border-early-spark-sky-blue { 
+    border-color: #c7d9e5;
+  }
+
+  .ring-early-spark-sky-blue {
+    --tw-ring-color: #c7d9e5;
+  }
+
+  .bg-gradient-early-spark-primary {
+    background: linear-gradient(135deg, #2e4156 0%, #587c90 100%);
+  }
+
+  .bg-gradient-early-spark-secondary {
+    background: linear-gradient(135deg, #587c90 0%, #c7d9e5 100%);
+  }
+
+  .bg-gradient-early-spark-neutral {
+    background: linear-gradient(135deg, #f3efec 0%, #ffffff 100%);
+  }
+
+  .bg-early-spark-white\/90 {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
 }

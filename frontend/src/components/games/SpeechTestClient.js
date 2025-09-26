@@ -319,12 +319,18 @@ export default function SpeechTestClient() {
 
   if (gameState === "instructions") {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8">
+      <div
+        className="min-h-screen py-8"
+        style={{
+          background:
+            "linear-gradient(135deg, #f7fafc 0%, #e2e8f0 50%, #cbd5e0 100%)",
+        }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Header */}
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-4">
-              <Mic className="h-12 w-12 text-blue-600" />
+              <Mic className="h-12 w-12" style={{ color: "#1e3a8a" }} />
               <h1 className="text-3xl font-bold text-gray-900">
                 Speech Fluency Test
               </h1>
@@ -447,7 +453,21 @@ export default function SpeechTestClient() {
           <div className="text-center">
             <button
               onClick={initializeRecording}
-              className="group bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+              className="group text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+              style={{
+                background: "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)",
+                boxShadow: "0 4px 20px rgba(30, 58, 138, 0.3)",
+              }}
+              onMouseEnter={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e40af 0%, #0e7490 100%)";
+                e.target.style.boxShadow = "0 8px 30px rgba(30, 58, 138, 0.4)";
+              }}
+              onMouseLeave={(e) => {
+                e.target.style.background =
+                  "linear-gradient(135deg, #1e3a8a 0%, #0891b2 100%)";
+                e.target.style.boxShadow = "0 4px 20px rgba(30, 58, 138, 0.3)";
+              }}
             >
               <Mic className="mr-2 h-5 w-5" />
               Start Speech Test

@@ -230,17 +230,17 @@ export default function ResultsClient({ session }) {
   const getRiskColor = (riskLevel) => {
     switch (riskLevel) {
       case "very-low":
-        return "text-green-600 bg-green-100";
+        return "text-early-spark-navy bg-early-spark-sky-blue";
       case "low":
-        return "text-blue-600 bg-blue-100";
+        return "text-early-spark-teal bg-early-spark-sky-blue";
       case "moderate":
-        return "text-yellow-600 bg-yellow-100";
+        return "text-early-spark-navy bg-early-spark-beige";
       case "high":
-        return "text-orange-600 bg-orange-100";
+        return "text-red-600 bg-red-100";
       case "very-high":
         return "text-red-600 bg-red-100";
       default:
-        return "text-gray-600 bg-gray-100";
+        return "text-early-spark-teal bg-early-spark-beige";
     }
   };
 
@@ -261,11 +261,11 @@ export default function ResultsClient({ session }) {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8">
+      <div className="min-h-screen bg-gradient-early-spark-neutral py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center py-12">
-            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto mb-4"></div>
-            <p className="text-gray-600">Loading your results...</p>
+            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-early-spark-navy mx-auto mb-4"></div>
+            <p className="text-early-spark-teal">Loading your results...</p>
           </div>
         </div>
       </div>
@@ -273,7 +273,7 @@ export default function ResultsClient({ session }) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8">
+    <div className="min-h-screen bg-gradient-early-spark-neutral py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8">

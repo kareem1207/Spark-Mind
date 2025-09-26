@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "SparkMind - Dementia Early Detection System",
+  title: "Early Spark - Dementia Early Detection System",
   description:
     "Advanced cognitive assessment system for early dementia detection through interactive games and AI analysis",
 };
@@ -18,7 +18,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} font-sans antialiased bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 min-h-screen`}
+        className={`${inter.variable} font-sans antialiased min-h-screen`}
+        style={{
+          background: "linear-gradient(135deg, #f3efec 0%, #ffffff 100%)",
+        }}
       >
         <SessionProvider>
           <Navigation />

@@ -116,23 +116,29 @@ export default function DashboardClient({ session }) {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <div className="relative">
-            <Brain className="h-16 w-16 text-indigo-600 animate-pulse mx-auto mb-4" />
-            <div className="absolute -inset-2 bg-indigo-100 rounded-full opacity-50 animate-ping"></div>
+            <Brain
+              className="h-16 w-16 animate-pulse mx-auto mb-4"
+              style={{ color: "#2e4156" }}
+            />
+            <div
+              className="absolute -inset-2 rounded-full opacity-50 animate-ping"
+              style={{ backgroundColor: "#c7d9e5" }}
+            ></div>
           </div>
-          <p className="text-gray-600">Loading your dashboard...</p>
+          <p style={{ color: "#587c90" }}>Loading your dashboard...</p>
         </div>
       </div>
     );
   }
 
-  const COLORS = ["#8B5CF6", "#06B6D4", "#10B981", "#F59E0B"];
+  const COLORS = ["#2e4156", "#587c90", "#c7d9e5", "#f3efec"]; // Early Spark colors
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 py-8">
+    <div className="min-h-screen bg-gradient-early-spark-neutral py-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Welcome Header */}
         <div className="mb-8">
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
+          <div className="bg-early-spark-white rounded-2xl p-6 shadow-lg border border-early-spark-sky-blue">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
               <div className="flex items-center space-x-4">
                 <div className="relative">
@@ -142,20 +148,20 @@ export default function DashboardClient({ session }) {
                       alt={session.user.name}
                       width={60}
                       height={60}
-                      className="rounded-full ring-4 ring-indigo-100"
+                      className="rounded-full ring-4 ring-early-spark-sky-blue"
                     />
                   ) : (
-                    <div className="w-15 h-15 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
-                      <Brain className="h-8 w-8 text-white" />
+                    <div className="w-15 h-15 bg-gradient-early-spark-primary rounded-full flex items-center justify-center">
+                      <Brain className="h-8 w-8 text-early-spark-white" />
                     </div>
                   )}
                   <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-400 rounded-full border-2 border-white"></div>
                 </div>
                 <div>
-                  <h1 className="text-2xl font-bold text-gray-900">
+                  <h1 className="text-2xl font-bold text-early-spark-navy">
                     Welcome back, {dashboardData?.user?.name?.split(" ")[0]}!
                   </h1>
-                  <p className="text-gray-600">
+                  <p className="text-early-spark-teal">
                     Your cognitive health journey continues. Ready for today's
                     assessment?
                   </p>
@@ -165,7 +171,7 @@ export default function DashboardClient({ session }) {
               <div className="mt-4 md:mt-0 flex flex-col sm:flex-row gap-3">
                 <Link
                   href="/games"
-                  className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-indigo-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+                  className="group bg-gradient-early-spark-primary text-early-spark-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
                 >
                   <Play className="mr-2 h-4 w-4" />
                   Start Assessment
@@ -173,7 +179,7 @@ export default function DashboardClient({ session }) {
                 </Link>
                 <Link
                   href="/reports"
-                  className="bg-white text-indigo-600 px-6 py-3 rounded-xl font-semibold border-2 border-indigo-600 hover:bg-indigo-50 transition-all inline-flex items-center shadow-lg hover:shadow-xl"
+                  className="bg-early-spark-white text-early-spark-navy px-6 py-3 rounded-xl font-semibold border-2 border-early-spark-navy hover:bg-early-spark-sky-blue transition-all inline-flex items-center shadow-lg hover:shadow-xl"
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Download Report
@@ -185,19 +191,21 @@ export default function DashboardClient({ session }) {
 
         {/* Key Metrics */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+          <div className="bg-early-spark-white rounded-2xl p-6 shadow-lg border border-early-spark-sky-blue hover:shadow-xl transition-shadow">
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm font-medium text-gray-600">Risk Score</p>
-                <p className="text-3xl font-bold text-gray-900">
+                <p className="text-sm font-medium text-early-spark-teal">
+                  Risk Score
+                </p>
+                <p className="text-3xl font-bold text-early-spark-navy">
                   {dashboardData?.riskScore?.current}%
                 </p>
-                <p className="text-sm text-green-600 flex items-center mt-1">
+                <p className="text-sm text-early-spark-teal flex items-center mt-1">
                   <TrendingUp className="h-4 w-4 mr-1" />
                   {Math.abs(dashboardData?.riskScore?.trend)}% improvement
                 </p>
               </div>
-              <div className="p-3 bg-green-100 rounded-xl">
+              <div className="p-3 bg-early-spark-sky-blue rounded-xl">
                 <Target className="h-6 w-6 text-green-600" />
               </div>
             </div>

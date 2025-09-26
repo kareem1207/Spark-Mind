@@ -79,8 +79,8 @@ export default function Home() {
       <section className="relative py-20 lg:py-32">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute -top-40 -right-32 w-96 h-96 bg-gradient-to-br from-indigo-400 to-purple-600 rounded-full opacity-10 blur-3xl"></div>
-          <div className="absolute -bottom-40 -left-32 w-96 h-96 bg-gradient-to-tr from-blue-400 to-cyan-600 rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -top-40 -right-32 w-96 h-96 bg-gradient-early-spark-primary rounded-full opacity-10 blur-3xl"></div>
+          <div className="absolute -bottom-40 -left-32 w-96 h-96 bg-gradient-early-spark-secondary rounded-full opacity-10 blur-3xl"></div>
           <Image
             src="/globe.svg"
             alt="Background decoration"
@@ -94,20 +94,31 @@ export default function Home() {
           <div className="text-center">
             <div className="flex items-center justify-center space-x-4 mb-8">
               <div className="relative">
-                <Brain className="h-16 w-16 text-indigo-600" />
-                <div className="absolute -inset-2 bg-indigo-100 rounded-full opacity-50 animate-pulse"></div>
+                <Brain className="h-16 w-16" style={{ color: "#2e4156" }} />
+                <div
+                  className="absolute -inset-2 rounded-full opacity-50 animate-pulse"
+                  style={{ backgroundColor: "#c7d9e5" }}
+                ></div>
               </div>
-              <span className="text-4xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                SparkMind
+              <span className="text-4xl font-bold" style={{ color: "#2e4156" }}>
+                Early Spark
               </span>
             </div>
 
-            <h1 className="text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
+            <h1
+              className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
+              style={{ color: "#2e4156" }}
+            >
               Early Detection for
-              <span className="block text-indigo-600">Better Outcomes</span>
+              <span className="block" style={{ color: "#587c90" }}>
+                Better Outcomes
+              </span>
             </h1>
 
-            <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
+            <p
+              className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed"
+              style={{ color: "#587c90" }}
+            >
               Revolutionary AI-powered cognitive assessment system that detects
               early signs of dementia through engaging interactive games and
               comprehensive analysis.
@@ -117,7 +128,11 @@ export default function Home() {
               {session ? (
                 <Link
                   href="/dashboard"
-                  className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+                  className="group px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center text-white"
+                  style={{
+                    background:
+                      "linear-gradient(135deg, #2e4156 0%, #587c90 100%)",
+                  }}
                 >
                   Go to Dashboard
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -126,12 +141,29 @@ export default function Home() {
                 <>
                   <Link
                     href="/auth/signin"
-                    className="group bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-indigo-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+                    className="group px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center text-white"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #2e4156 0%, #587c90 100%)",
+                    }}
                   >
                     Start Assessment
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <button className="group bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold text-lg border-2 border-indigo-600 hover:bg-indigo-50 transition-all inline-flex items-center shadow-lg hover:shadow-xl">
+                  <button
+                    className="group bg-white px-8 py-4 rounded-xl font-semibold text-lg border-2 hover:opacity-90 transition-all inline-flex items-center shadow-lg hover:shadow-xl"
+                    style={{
+                      color: "#2e4156",
+                      borderColor: "#2e4156",
+                      backgroundColor: "#ffffff",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.target.style.backgroundColor = "#c7d9e5")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.target.style.backgroundColor = "#ffffff")
+                    }
+                  >
                     <Play className="mr-2 h-5 w-5" />
                     Watch Demo
                   </button>
@@ -142,28 +174,40 @@ export default function Home() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                <div
+                  className="text-3xl font-bold mb-2"
+                  style={{ color: "#2e4156" }}
+                >
                   95%
                 </div>
-                <div className="text-gray-600">Accuracy Rate</div>
+                <div style={{ color: "#587c90" }}>Accuracy Rate</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                <div
+                  className="text-3xl font-bold mb-2"
+                  style={{ color: "#2e4156" }}
+                >
                   1K+
                 </div>
-                <div className="text-gray-600">Healthcare Providers</div>
+                <div style={{ color: "#587c90" }}>Healthcare Providers</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                <div
+                  className="text-3xl font-bold mb-2"
+                  style={{ color: "#2e4156" }}
+                >
                   15min
                 </div>
-                <div className="text-gray-600">Assessment Time</div>
+                <div style={{ color: "#587c90" }}>Assessment Time</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-indigo-600 mb-2">
+                <div
+                  className="text-3xl font-bold mb-2"
+                  style={{ color: "#2e4156" }}
+                >
                   50K+
                 </div>
-                <div className="text-gray-600">Assessments</div>
+                <div style={{ color: "#587c90" }}>Assessments</div>
               </div>
             </div>
           </div>
@@ -171,13 +215,22 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white/50 backdrop-blur-sm">
+      <section
+        className="py-20 backdrop-blur-sm"
+        style={{ backgroundColor: "rgba(255, 255, 255, 0.6)" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Why Choose SparkMind?
+            <h2
+              className="text-4xl font-bold mb-4"
+              style={{ color: "#2e4156" }}
+            >
+              Why Choose Early Spark?
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p
+              className="text-xl max-w-3xl mx-auto"
+              style={{ color: "#587c90" }}
+            >
               Advanced technology meets clinical excellence to provide the most
               accurate and accessible cognitive assessment platform available.
             </p>
@@ -187,15 +240,27 @@ export default function Home() {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-200 transform hover:-translate-y-2"
+                className="group p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border transform hover:-translate-y-2"
+                style={{ borderColor: "#c7d9e5" }}
+                onMouseEnter={(e) => (e.target.style.borderColor = "#587c90")}
+                onMouseLeave={(e) => (e.target.style.borderColor = "#c7d9e5")}
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-xl mb-4 group-hover:scale-110 transition-transform">
-                  <feature.icon className="h-6 w-6 text-indigo-600" />
+                <div
+                  className="flex items-center justify-center w-12 h-12 rounded-xl mb-4 group-hover:scale-110 transition-transform"
+                  style={{ backgroundColor: "#c7d9e5" }}
+                >
+                  <feature.icon
+                    className="h-6 w-6"
+                    style={{ color: "#2e4156" }}
+                  />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3
+                  className="text-xl font-semibold mb-2"
+                  style={{ color: "#2e4156" }}
+                >
                   {feature.title}
                 </h3>
-                <p className="text-gray-600">{feature.description}</p>
+                <p style={{ color: "#587c90" }}>{feature.description}</p>
               </div>
             ))}
           </div>
@@ -206,10 +271,10 @@ export default function Home() {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl font-bold text-early-spark-navy mb-4">
               Cognitive Assessment Games
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-early-spark-teal max-w-3xl mx-auto">
               Engaging, scientifically-validated games that assess different
               aspects of cognitive function in a fun and interactive way.
             </p>
@@ -219,24 +284,24 @@ export default function Home() {
             {games.map((game, index) => (
               <div
                 key={index}
-                className="group relative p-6 bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-indigo-200 transform hover:-translate-y-2"
+                className="group relative p-6 bg-gradient-early-spark-neutral rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-early-spark-sky-blue hover:border-early-spark-teal transform hover:-translate-y-2"
               >
                 <div className="text-4xl mb-4">{game.icon}</div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-early-spark-navy mb-2">
                   {game.name}
                 </h3>
-                <p className="text-gray-600 mb-4">{game.description}</p>
+                <p className="text-early-spark-teal mb-4">{game.description}</p>
                 <div className="flex items-center justify-between">
                   <span
                     className={`px-3 py-1 rounded-full text-sm font-medium ${
                       game.difficulty === "Easy"
-                        ? "bg-green-100 text-green-800"
-                        : "bg-yellow-100 text-yellow-800"
+                        ? "bg-early-spark-sky-blue text-early-spark-navy"
+                        : "bg-early-spark-teal text-early-spark-white"
                     }`}
                   >
                     {game.difficulty}
                   </span>
-                  <Clock className="h-4 w-4 text-gray-400" />
+                  <Clock className="h-4 w-4 text-early-spark-teal" />
                 </div>
               </div>
             ))}
@@ -245,7 +310,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-purple-600 relative overflow-hidden">
+      <section className="py-20 bg-gradient-early-spark-primary relative overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src="/next.svg"
@@ -264,18 +329,18 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-early-spark-white mb-4">
             Ready to Take Control of Your Cognitive Health?
           </h2>
-          <p className="text-xl text-indigo-100 mb-8">
+          <p className="text-xl text-early-spark-sky-blue mb-8">
             Join thousands of individuals and healthcare professionals who trust
-            SparkMind for early detection and prevention.
+            Early Spark for early detection and prevention.
           </p>
 
           {!session && (
             <Link
               href="/auth/signin"
-              className="group bg-white text-indigo-600 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
+              className="group bg-early-spark-white text-early-spark-navy px-8 py-4 rounded-xl font-semibold text-lg hover:bg-early-spark-sky-blue transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center"
             >
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -285,63 +350,66 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-early-spark-navy text-early-spark-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <Brain className="h-8 w-8 text-indigo-400" />
-                <span className="text-xl font-bold">SparkMind</span>
+                <Brain className="h-8 w-8 text-early-spark-sky-blue" />
+                <span className="text-xl font-bold">Early Spark</span>
               </div>
-              <p className="text-gray-400 mb-4">
+              <p className="text-early-spark-sky-blue mb-4">
                 Advanced cognitive assessment system for early dementia
                 detection. Empowering better health outcomes through technology.
               </p>
               <div className="flex space-x-4">
-                <Image
-                  src="/file.svg"
-                  alt="Security"
-                  width={24}
-                  height={24}
-                  className="opacity-60"
-                />
-                <Image
-                  src="/window.svg"
-                  alt="Analytics"
-                  width={24}
-                  height={24}
-                  className="opacity-60"
-                />
-                <Image
-                  src="/globe.svg"
-                  alt="Global"
-                  width={24}
-                  height={24}
-                  className="opacity-60"
-                />
+                <div
+                  className="w-6 h-6 rounded-full opacity-60"
+                  style={{ backgroundColor: "#0891b2" }}
+                ></div>
+                <div
+                  className="w-6 h-6 rounded-full opacity-60"
+                  style={{ backgroundColor: "#7dd3fc" }}
+                ></div>
+                <div
+                  className="w-6 h-6 rounded-full opacity-60"
+                  style={{ backgroundColor: "#bae6fd" }}
+                ></div>
               </div>
             </div>
 
             <div>
               <h3 className="font-semibold mb-4">Product</h3>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-early-spark-sky-blue">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Features
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Games
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Reports
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     API
                   </a>
                 </li>
@@ -350,24 +418,36 @@ export default function Home() {
 
             <div>
               <h3 className="font-semibold mb-4">Support</h3>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-early-spark-sky-blue">
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Help Center
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Terms of Service
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a
+                    href="#"
+                    className="hover:text-early-spark-white transition-colors"
+                  >
                     Contact
                   </a>
                 </li>
@@ -375,10 +455,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-gray-800 pt-8 mt-8 text-center text-gray-400">
+          <div className="border-t border-early-spark-teal pt-8 mt-8 text-center text-early-spark-sky-blue">
             <p>
-              &copy; 2024 SparkMind. All rights reserved. Built with Next.js and
-              powered by AI.
+              &copy; 2024 Early Spark. All rights reserved. Built with Next.js
+              and powered by AI.
             </p>
           </div>
         </div>
