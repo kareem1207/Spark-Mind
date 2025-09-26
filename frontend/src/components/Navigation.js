@@ -34,7 +34,7 @@ export default function Navigation() {
       <nav
         className="backdrop-blur-lg border-b sticky top-0 z-50"
         style={{
-          backgroundColor: "#f3efec",
+          backgroundColor: "rgba(243, 239, 236, 0.8)",
           borderColor: "#c7d9e5",
         }}
       >
@@ -56,7 +56,7 @@ export default function Navigation() {
     <nav
       className="backdrop-blur-lg border-b sticky top-0 z-50 shadow-sm"
       style={{
-        backgroundColor: "#f3efec",
+        backgroundColor: "rgba(243, 239, 236, 0.8)",
         borderColor: "#c7d9e5",
       }}
     >

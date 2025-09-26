@@ -82,7 +82,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full animate-gradient"
           style={{
             background:
-              "linear-gradient(-45deg, #2e4156, #587c90, #1e3a8a, #0891b2)",
+              "linear-gradient(-45deg, #587c90, #2e4156, #1e3a8a, #0891b2)",
             backgroundSize: "400% 400%",
           }}
         ></div>
@@ -94,25 +94,32 @@ export default function Home() {
               <span style={{ fontStyle: "italic", color: "#ffffff" }}>
                 Forgot
               </span>{" "}
-              where you left something??
+              <span style={{ color: "#d4cbc7" }}>where you left something</span>
+              ??
             </div>
             <div className="block mb-2" style={{ color: "#f3efec" }}>
-              Recognized someone but Name{" "}
+              <span style={{ color: "#d4cbc7" }}>
+                Recognized someone but Name
+              </span>{" "}
               <span style={{ fontStyle: "italic", color: "#ffffff" }}>
                 Escapes
               </span>
               ??
             </div>
             <div className="block">
-              Tasks felt{" "}
+              <span style={{ color: "#d4cbc7" }}>Tasks felt</span>{" "}
               <span style={{ fontStyle: "italic", color: "#ffffff" }}>
                 trickier
               </span>{" "}
-              than usual??
+              <span style={{ color: "#d4cbc7" }}>than usual</span>
+              ??
             </div>
           </div>
 
-          <div className="text-lg sm:text-xl max-w-lg mx-auto mb-12 opacity-90 leading-relaxed font-light">
+          <div
+            className="text-lg sm:text-xl max-w-lg mx-auto mb-12 opacity-90 leading-relaxed font-light"
+            style={{ color: "#3efec" }}
+          >
             We agree—life comes with little bumps. That's okay, we've got you.
             Take a moment for yourself. Explore, stay curious, and keep your
             mind active.
@@ -168,54 +175,27 @@ export default function Home() {
         </div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-4 mb-8">
-              <div className="relative">
-                <Brain className="h-16 w-16" style={{ color: "#2e4156" }} />
-                <div
-                  className="absolute -inset-2 rounded-full opacity-50 animate-pulse"
-                  style={{ backgroundColor: "#c7d9e5" }}
-                ></div>
-              </div>
-              <span className="text-4xl font-bold" style={{ color: "#2e4156" }}>
-                Early Spark
-              </span>
-            </div>
-
-            <h1
-              className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
-              style={{ color: "#2e4156" }}
-            >
-              Early Detection for
-              <span className="block" style={{ color: "#587c90" }}>
-                Better Outcomes
-              </span>
-            </h1>
-
-            <p
-              className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed"
-              style={{ color: "#587c90" }}
-            >
-              Revolutionary AI-powered cognitive assessment system that detects
-              early signs of dementia through engaging interactive games and
-              comprehensive analysis.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-              {session ? (
-                <Link
-                  href="/dashboard"
-                  className="group px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center text-white"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, #2e4156 0%, #587c90 100%)",
-                  }}
+          <div>
+            <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center space-x-4">
+                <div className="relative">
+                  <Brain className="h-16 w-16" style={{ color: "#2e4156" }} />
+                  <div
+                    className="absolute -inset-2 rounded-full opacity-50 animate-pulse"
+                    style={{ backgroundColor: "#c7d9e5" }}
+                  ></div>
+                </div>
+                <span
+                  className="text-4xl font-bold"
+                  style={{ color: "#2e4156" }}
                 >
-                  Go to Dashboard
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              ) : (
-                <>
+                  Early Spark
+                </span>
+              </div>
+
+              {/* Sign In Button - Mobile Hidden, Desktop Shown */}
+              {!session && (
+                <div className="hidden md:block">
                   <Link
                     href="/auth/signin"
                     className="group px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center text-white"
@@ -227,64 +207,118 @@ export default function Home() {
                     Start Assessment
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  <button
-                    className="group bg-white px-8 py-4 rounded-xl font-semibold text-lg border-2 hover:opacity-90 transition-all inline-flex items-center shadow-lg hover:shadow-xl"
-                    style={{
-                      color: "#2e4156",
-                      borderColor: "#2e4156",
-                      backgroundColor: "#ffffff",
-                    }}
-                    onMouseEnter={(e) =>
-                      (e.target.style.backgroundColor = "#c7d9e5")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.target.style.backgroundColor = "#ffffff")
-                    }
-                  >
-                    <Play className="mr-2 h-5 w-5" />
-                    Watch Demo
-                  </button>
-                </>
+                </div>
               )}
             </div>
 
-            {/* Stats */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
-              <div className="text-center">
-                <div
-                  className="text-3xl font-bold mb-2"
-                  style={{ color: "#2e4156" }}
-                >
-                  95%
-                </div>
-                <div style={{ color: "#587c90" }}>Accuracy Rate</div>
+            <div className="text-center">
+              <h1
+                className="text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
+                style={{ color: "#2e4156" }}
+              >
+                Early Detection for
+                <span className="block" style={{ color: "#587c90" }}>
+                  Better Outcomes
+                </span>
+              </h1>
+
+              <p
+                className="text-xl mb-12 max-w-3xl mx-auto leading-relaxed"
+                style={{ color: "#587c90" }}
+              >
+                Revolutionary AI-powered cognitive assessment system that
+                detects early signs of dementia through engaging interactive
+                games and comprehensive analysis.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+                {session ? (
+                  <Link
+                    href="/dashboard"
+                    className="group px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center text-white"
+                    style={{
+                      background:
+                        "linear-gradient(135deg, #2e4156 0%, #587c90 100%)",
+                    }}
+                  >
+                    Go to Dashboard
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                ) : (
+                  <>
+                    {/* Mobile Sign In Button */}
+                    <div className="md:hidden">
+                      <Link
+                        href="/auth/signin"
+                        className="group px-8 py-4 rounded-xl font-semibold text-lg hover:opacity-90 transition-all transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center text-white"
+                        style={{
+                          background:
+                            "linear-gradient(135deg, #2e4156 0%, #587c90 100%)",
+                        }}
+                      >
+                        Start Assessment
+                        <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </div>
+                    <button
+                      className="group bg-white px-8 py-4 rounded-xl font-semibold text-lg border-2 hover:opacity-90 transition-all inline-flex items-center shadow-lg hover:shadow-xl"
+                      style={{
+                        color: "#2e4156",
+                        borderColor: "#2e4156",
+                        backgroundColor: "#ffffff",
+                      }}
+                      onMouseEnter={(e) =>
+                        (e.target.style.backgroundColor = "#c7d9e5")
+                      }
+                      onMouseLeave={(e) =>
+                        (e.target.style.backgroundColor = "#ffffff")
+                      }
+                    >
+                      <Play className="mr-2 h-5 w-5" />
+                      Watch Demo
+                    </button>
+                  </>
+                )}
               </div>
-              <div className="text-center">
-                <div
-                  className="text-3xl font-bold mb-2"
-                  style={{ color: "#2e4156" }}
-                >
-                  1K+
+
+              {/* Stats */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div className="text-center">
+                  <div
+                    className="text-3xl font-bold mb-2"
+                    style={{ color: "#2e4156" }}
+                  >
+                    95%
+                  </div>
+                  <div style={{ color: "#587c90" }}>Accuracy Rate</div>
                 </div>
-                <div style={{ color: "#587c90" }}>Healthcare Providers</div>
-              </div>
-              <div className="text-center">
-                <div
-                  className="text-3xl font-bold mb-2"
-                  style={{ color: "#2e4156" }}
-                >
-                  15min
+                <div className="text-center">
+                  <div
+                    className="text-3xl font-bold mb-2"
+                    style={{ color: "#2e4156" }}
+                  >
+                    1K+
+                  </div>
+                  <div style={{ color: "#587c90" }}>Healthcare Providers</div>
                 </div>
-                <div style={{ color: "#587c90" }}>Assessment Time</div>
-              </div>
-              <div className="text-center">
-                <div
-                  className="text-3xl font-bold mb-2"
-                  style={{ color: "#2e4156" }}
-                >
-                  50K+
+                <div className="text-center">
+                  <div
+                    className="text-3xl font-bold mb-2"
+                    style={{ color: "#2e4156" }}
+                  >
+                    15min
+                  </div>
+                  <div style={{ color: "#587c90" }}>Assessment Time</div>
                 </div>
-                <div style={{ color: "#587c90" }}>Assessments</div>
+                <div className="text-center">
+                  <div
+                    className="text-3xl font-bold mb-2"
+                    style={{ color: "#2e4156" }}
+                  >
+                    50K+
+                  </div>
+                  <div style={{ color: "#587c90" }}>Assessments</div>
+                </div>
               </div>
             </div>
           </div>
