@@ -30,6 +30,8 @@ const initialState = {
   isComplete: false,
   error: null,
   submissionSuccess: false,
+  aiResults: null, // Store AI analysis results
+  isProcessing: false, // Show loading while processing
 };
 
 function assessmentReducer(state, action) {
@@ -67,6 +69,19 @@ function assessmentReducer(state, action) {
         submissionSuccess: true,
         isSubmitting: false,
         isComplete: true,
+      };
+
+    case "SET_PROCESSING":
+      return {
+        ...state,
+        isProcessing: action.payload,
+      };
+
+    case "SET_AI_RESULTS":
+      return {
+        ...state,
+        aiResults: action.payload,
+        isProcessing: false,
       };
 
     case "RESET_ASSESSMENT":
@@ -143,6 +158,12 @@ export function AssessmentProvider({ children }) {
       }
 
       const result = await response.json();
+
+      // Store AI results if available
+      if (result.ai_analysis) {
+        dispatch({ type: "SET_AI_RESULTS", payload: result.ai_analysis });
+      }
+
       dispatch({ type: "SET_SUCCESS" });
 
       return result;

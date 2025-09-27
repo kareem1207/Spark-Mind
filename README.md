@@ -15,7 +15,7 @@ Endpoints:
 - GET /api/health – health check
 - POST /api/assessment – trigger assessment. Body:
     ```json
-    {"scores":{"stroop_colour":0,"memory_game":0,"matching_object_purpose":0},"skip_audio":true,"fast":false,"offline_sentiment":false}
+    {"scores":{"stroop_colour":0,"memory_game":0,"image_recall":0},"skip_audio":true,"fast":false,"offline_sentiment":false}
     ```
     Returns risk object, pdf filename, summary excerpt, and scores.
 - GET /api/assessment/latest – latest PDF filename

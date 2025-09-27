@@ -68,20 +68,62 @@ export async function POST(request) {
       },
     };
 
-    // TODO: Integrate with your Python backend
-    // Example integration:
-    /*
-    const pythonBackendResponse = await fetch('http://your-python-backend/api/submit-tests', {
-      method: 'POST',
-      body: formData, // Forward the original FormData
-    });
-    
-    if (!pythonBackendResponse.ok) {
-      throw new Error('Python backend processing failed');
+    // Forward to Python backend for AI analysis
+    try {
+      // Create new FormData for Python backend (only the fields it expects)
+      const backendFormData = new FormData();
+      backendFormData.append(
+        "memory_score",
+        submissionData.memory_score.toString()
+      );
+      backendFormData.append(
+        "stroop_score",
+        submissionData.stroop_score.toString()
+      );
+      backendFormData.append(
+        "image_recall_score",
+        submissionData.image_recall_score.toString()
+      );
+
+      // Add audio files if they exist
+      for (const [key, audioData] of Object.entries(
+        submissionData.audio_files
+      )) {
+        if (audioData.buffer) {
+          const blob = new Blob([audioData.buffer]);
+          const file = new File([blob], audioData.filename);
+          backendFormData.append(key, file);
+        }
+      }
+
+      const pythonBackendResponse = await fetch(
+        "http://127.0.0.1:8000/api/submit-tests",
+        {
+          method: "POST",
+          body: backendFormData,
+        }
+      );
+
+      if (!pythonBackendResponse.ok) {
+        const errorText = await pythonBackendResponse.text();
+        console.error("Python backend error:", errorText);
+        throw new Error(
+          `Python backend processing failed: ${pythonBackendResponse.status}`
+        );
+      }
+
+      const pythonResult = await pythonBackendResponse.json();
+      console.log("Python backend response:", pythonResult);
+
+      // Merge results from Python backend
+      response.ai_analysis = pythonResult;
+      response.data.summary_report = pythonResult.summary_report;
+      response.data.evaluation = pythonResult.evaluation;
+    } catch (backendError) {
+      console.warn("Python backend integration failed:", backendError.message);
+      // Continue with frontend-only response but include the error info
+      response.backend_error = backendError.message;
     }
-    
-    const pythonResult = await pythonBackendResponse.json();
-    */
 
     return NextResponse.json(response, { status: 200 });
   } catch (error) {
