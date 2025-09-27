@@ -15,6 +15,7 @@ import {
   Gamepad2,
   FileText,
   Settings,
+  ClipboardList,
 } from "lucide-react";
 
 export default function Navigation() {
@@ -23,6 +24,7 @@ export default function Navigation() {
 
   const navigationItems = [
     { name: "Dashboard", href: "/dashboard", icon: Home },
+    { name: "Assessment", href: "/assessment", icon: ClipboardList },
     { name: "Games", href: "/games", icon: Gamepad2 },
     { name: "Results", href: "/results", icon: BarChart3 },
     { name: "Reports", href: "/reports", icon: FileText },
