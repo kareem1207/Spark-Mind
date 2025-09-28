@@ -1,59 +1,126 @@
 {
-    "text": " अआई मैंने मिशकरी",
+    "text": " I don't know what to talk about, please, I don't know what to talk.",
     "segments": [
         {
             "id": 0,
             "seek": 0,
-            "start": 0.9400000000000002,
-            "end": 2.6,
-            "text": " अआई मैंने मिशकरी",
+            "start": 0.0,
+            "end": 2.26,
+            "text": " I don't know what to talk about, please, I don't know what to talk.",
             "tokens": [
                 50364,
-                8485,
-                227,
-                3941,
-                228,
-                3941,
-                230,
-                48449,
-                43372,
-                31945,
-                35082,
-                21981,
-                48449,
-                33279,
-                3941,
-                114,
-                41858,
-                25411,
-                31881,
-                50514
+                286,
+                500,
+                380,
+                458,
+                437,
+                281,
+                751,
+                466,
+                11,
+                1767,
+                11,
+                286,
+                500,
+                380,
+                458,
+                437,
+                281,
+                751,
+                13,
+                50484
             ],
             "temperature": 0.0,
-            "avg_logprob": -0.7833516257149833,
-            "compression_ratio": 0.8461538461538461,
-            "no_speech_prob": 0.1996268332004547,
+            "avg_logprob": -0.41563688624988904,
+            "compression_ratio": 1.2641509433962264,
+            "no_speech_prob": 0.12778054177761078,
             "words": [
                 {
-                    "word": " अआई",
-                    "start": 0.9400000000000002,
-                    "end": 1.82,
-                    "probability": 0.3646021584669749
+                    "word": " I",
+                    "start": 0.0,
+                    "end": 0.2,
+                    "probability": 0.25102078914642334
                 },
                 {
-                    "word": " मैंने",
-                    "start": 1.82,
-                    "end": 2.16,
-                    "probability": 0.5790261387825012
+                    "word": " don't",
+                    "start": 0.2,
+                    "end": 0.38,
+                    "probability": 0.932721346616745
                 },
                 {
-                    "word": " मिशकरी",
-                    "start": 2.16,
-                    "end": 2.6,
-                    "probability": 0.6973965508597237
+                    "word": " know",
+                    "start": 0.38,
+                    "end": 0.38,
+                    "probability": 0.8619174361228943
+                },
+                {
+                    "word": " what",
+                    "start": 0.38,
+                    "end": 0.52,
+                    "probability": 0.9151550531387329
+                },
+                {
+                    "word": " to",
+                    "start": 0.52,
+                    "end": 0.62,
+                    "probability": 0.9766320586204529
+                },
+                {
+                    "word": " talk",
+                    "start": 0.62,
+                    "end": 0.78,
+                    "probability": 0.9874345660209656
+                },
+                {
+                    "word": " about,",
+                    "start": 0.78,
+                    "end": 0.96,
+                    "probability": 0.8208212852478027
+                },
+                {
+                    "word": " please,",
+                    "start": 1.16,
+                    "end": 1.3,
+                    "probability": 0.34879839420318604
+                },
+                {
+                    "word": " I",
+                    "start": 1.44,
+                    "end": 1.52,
+                    "probability": 0.8442122340202332
+                },
+                {
+                    "word": " don't",
+                    "start": 1.52,
+                    "end": 1.78,
+                    "probability": 0.991875946521759
+                },
+                {
+                    "word": " know",
+                    "start": 1.78,
+                    "end": 1.78,
+                    "probability": 0.9898821711540222
+                },
+                {
+                    "word": " what",
+                    "start": 1.78,
+                    "end": 1.94,
+                    "probability": 0.9946850538253784
+                },
+                {
+                    "word": " to",
+                    "start": 1.94,
+                    "end": 2.04,
+                    "probability": 0.9961673617362976
+                },
+                {
+                    "word": " talk.",
+                    "start": 2.04,
+                    "end": 2.26,
+                    "probability": 0.9988797307014465
                 }
             ]
         }
     ],
-    "language": "hi"
+    "language": "en"
 }

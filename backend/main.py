@@ -11,6 +11,8 @@ from dotenv import load_dotenv
 from fastapi import Request
 import time
 
+from torch import int16
+
 from AiAgent import run_pipeline
 
 load_dotenv()
@@ -68,23 +70,6 @@ class AssessmentRequest(BaseModel):
 def health():
 	return {"status": "ok"}
 
-
-def evaluate_assessment_results(memory_score: int, stroop_score: int, image_recall_score: int, audio_files: List[str]) -> Dict[str, Any]:
-	"""
-	Placeholder function for evaluating assessment results.
-	In the future, this could include:
-	- Database storage
-	- AI-powered analysis
-	- Risk assessment calculations
-	- Report generation
-	"""
-	return {
-		"evaluation_complete": True,
-		"processed_audio_files": len(audio_files),
-		"total_score": memory_score + stroop_score + image_recall_score
-	}
-
-
 @app.post("/api/submit-tests")
 async def submit_tests(
 	memory_score: int = Form(...),
@@ -132,18 +117,17 @@ async def submit_tests(
 		try:
 			if not audio_files:
 				raise ValueError("Audio files are required for cognitive assessment")
-			
+			scores: dict[str, int] = {
+				"stroop_colour": stroop_score,
+				"memory_game": memory_score,
+				"image_recall": image_recall_score,
+			}
 			ai_result = run_pipeline(
+				scores=scores,
 				audio_path=audio_file_paths,
 				offline_sentiment=False
 			)
 			
-			
-			ai_result["scores"].update({
-				"stroop_colour": stroop_score,
-				"memory_game": memory_score,
-				"image_recall": image_recall_score,
-			})
 			
 			print("✅ AI analysis completed successfully")
 			print(f"Generated files: PDF={os.path.basename(ai_result.get('pdf_path', 'none'))}")
@@ -184,11 +168,16 @@ async def create_assessment(payload: AssessmentRequest):
 @app.post("/api/assessment/speech")
 async def create_speech_assessment(
 	audio: UploadFile = File(...),
-	stroop_colour: float = Form(0),
-	memory_game: float = Form(0),
-	image_recall: float = Form(0),
+	stroop_colour: int = Form(0),
+	memory_game: int = Form(0),
+	image_recall: int = Form(0),
 	offline_sentiment: bool = Form(False),
 ):
+	scores: dict[str, int] = {
+		"stroop_colour": stroop_colour,
+		"memory_game": memory_game,
+		"image_recall": image_recall,
+	}
 	audio_dir = os.path.join(os.path.dirname(__file__), 'uploads')
 	os.makedirs(audio_dir, exist_ok=True)
 	if not audio.filename:
@@ -202,12 +191,7 @@ async def create_speech_assessment(
 		except Exception as e:
 			print(f"Error deleting file {existing_file}: {e}")
 
-	result = run_pipeline(audio_path=target_path, offline_sentiment=offline_sentiment)
-	result["scores"].update({
-		"stroop_colour": stroop_colour,
-		"memory_game": memory_game,
-		"image_recall": image_recall,
-	})
+	result = run_pipeline(scores=scores, audio_path=target_path, offline_sentiment=offline_sentiment)
 	return {
 		"summary": result.get("summary"),
 		"scores": result.get("scores"),
