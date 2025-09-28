@@ -159,7 +159,7 @@ export default function Home() {
         `}</style>
       </section>
 
-      {/* Early Spark Hero Section */}
+      {/* ForeKnow Hero Section */}
       <section className="relative py-20 lg:py-32">
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -189,7 +189,7 @@ export default function Home() {
                   className="text-4xl font-bold"
                   style={{ color: "#2e4156" }}
                 >
-                  Early Spark
+                  ForeKnow
                 </span>
               </div>
 
@@ -336,7 +336,7 @@ export default function Home() {
               className="text-4xl font-bold mb-4"
               style={{ color: "#2e4156" }}
             >
-              Why Choose Early Spark?
+              Why Choose ForeKnow?
             </h2>
             <p
               className="text-xl max-w-3xl mx-auto"
@@ -445,7 +445,7 @@ export default function Home() {
           </h2>
           <p className="text-xl text-early-spark-sky-blue mb-8">
             Join thousands of individuals and healthcare professionals who trust
-            Early Spark for early detection and prevention.
+            ForeKnow for early detection and prevention.
           </p>
 
           {!session && (
@@ -467,7 +467,7 @@ export default function Home() {
             <div className="col-span-2">
               <div className="flex items-center space-x-3 mb-4">
                 <Brain className="h-8 w-8 text-early-spark-sky-blue" />
-                <span className="text-xl font-bold">Early Spark</span>
+                <span className="text-xl font-bold">ForeKnow</span>
               </div>
               <p className="text-early-spark-sky-blue mb-4">
                 Advanced cognitive assessment system for early dementia
@@ -568,8 +568,8 @@ export default function Home() {
 
           <div className="border-t border-early-spark-teal pt-8 mt-8 text-center text-early-spark-sky-blue">
             <p>
-              &copy; 2024 Early Spark. All rights reserved. Built with Next.js
-              and powered by AI.
+              &copy; 2024 ForeKnow. All rights reserved. Built with Next.js and
+              powered by AI.
             </p>
           </div>
         </div>

@@ -91,7 +91,7 @@ graph TB
     SB --> API1
     SC --> API1
     SD --> API2[POST /api/speech/upload]
-    
+
     API1 --> API3[Backend Processing]
     API2 --> API4[Speech-to-Text Analysis]
     API4 --> API5[Sentiment Analysis]
@@ -212,18 +212,18 @@ graph LR
     GAMES --> MEMORY
     GAMES --> MATCHING
     GAMES --> SPEECH
-    
+
     APILIB --> GAME_API
     APILIB --> SPEECH_API
     APILIB --> RESULTS_API
     APILIB --> REPORT_API
-    
+
     AI_AGENT --> OPENAI
     STT --> CLOUD_STT
     SPEECH_API --> STT
     GAME_API --> MEMORY_SCORE
     SPEECH_API --> SENTIMENT
-    
+
     RESULTS_API --> DB_MODELS
     REPORT_API --> METRICS
 ```
@@ -347,7 +347,7 @@ graph TB
 ## File Structure Overview
 
 ```
-Early Spark/
+ForeKnow/
 ├── frontend/                    # Next.js Frontend Application
 │   ├── src/
 │   │   ├── app/                # App Router Pages
@@ -390,18 +390,21 @@ Early Spark/
 ## Key Features & Workflows
 
 ### 1. **User Authentication Workflow**
+
 - Google OAuth 2.0 integration
 - Session management with NextAuth.js
 - Protected routes and middleware
 - Automatic token refresh
 
 ### 2. **Cognitive Assessment Games**
+
 - **Stroop Color Test**: Measures cognitive flexibility and attention
 - **Memory Game**: Assesses working memory and pattern recognition
 - **Object-Purpose Matching**: Evaluates semantic memory and reasoning
 - **Speech Fluency Test**: Analyzes verbal fluency and language processing
 
 ### 3. **AI-Powered Analysis**
+
 - Real-time performance scoring
 - Speech-to-text transcription
 - Sentiment analysis of speech patterns
@@ -409,6 +412,7 @@ Early Spark/
 - Personalized recommendations
 
 ### 4. **Results & Reporting**
+
 - Interactive dashboard with progress charts
 - Comprehensive PDF report generation
 - Risk score visualization
@@ -416,6 +420,7 @@ Early Spark/
 - Export capabilities
 
 ### 5. **Technical Implementation**
+
 - Responsive design with Tailwind CSS
 - Real-time data synchronization
 - Error handling and loading states

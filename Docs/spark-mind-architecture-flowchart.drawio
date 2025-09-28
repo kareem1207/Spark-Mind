@@ -1,10 +1,10 @@
 <mxfile host="65bd71144e">
-    <diagram id="spark-mind-architecture" name="Early Spark System Architecture">
+    <diagram id="spark-mind-architecture" name="ForeKnow System Architecture">
         <mxGraphModel dx="343" dy="245" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="2339" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="title" value="Early Spark - Dementia Early Detection System" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+                <mxCell id="title" value="ForeKnow - Dementia Early Detection System" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
                     <mxGeometry x="500" y="20" width="654" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="frontend-layer" value="Frontend Layer (Next.js)" style="swimlane;whiteSpace=wrap;html=1;fontSize=16;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">

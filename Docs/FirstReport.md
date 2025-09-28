@@ -1,8 +1,8 @@
-# Early Spark – Technical Analysis and Report
+# ForeKnow – Technical Analysis and Report
 
 ## Overview
 
-This report documents the current state of the Early Spark repository based on the files present in the workspace. The codebase is in an early stage and contains:
+This report documents the current state of the ForeKnow repository based on the files present in the workspace. The codebase is in an early stage and contains:
 
 - A minimal backend (Python) with a scoring utility for a memory game and a placeholder entry point.
 - A very simple frontend (static HTML welcome page).
@@ -16,15 +16,15 @@ The primary implemented logic resides in `backend/MemoryGameScore.py`, which pro
 ## Repository Structure (as analyzed)
 
 - `backend/`
-    - `main.py` – placeholder script that currently prints "Hello world"; no framework wiring yet.
-    - `MemoryGameScore.py` – contains the `Marks` class implementing the memory game scoring logic.
-    - `audio/` – contains `audio.mp3` and `audio2.mp3` sample audio files.
-    - `tests/`
-        - `OpenAi whisper.ipynb` – Jupyter notebook that imports `whisper` and runs transcription (CPU-targeted, with a local cache path).
-        - `sample.txt` – a small text file likely used in testing.
-        - `transcription.json` – Whisper output containing text, segments, tokens, word-level timings, and probabilities.
+  - `main.py` – placeholder script that currently prints "Hello world"; no framework wiring yet.
+  - `MemoryGameScore.py` – contains the `Marks` class implementing the memory game scoring logic.
+  - `audio/` – contains `audio.mp3` and `audio2.mp3` sample audio files.
+  - `tests/`
+    - `OpenAi whisper.ipynb` – Jupyter notebook that imports `whisper` and runs transcription (CPU-targeted, with a local cache path).
+    - `sample.txt` – a small text file likely used in testing.
+    - `transcription.json` – Whisper output containing text, segments, tokens, word-level timings, and probabilities.
 - `frontend/`
-  - `index.html` – static "Welcome to Early Spark" page with simple styling.
+  - `index.html` – static "Welcome to ForeKnow" page with simple styling.
 - `database/` – currently empty.
 - `Docs/FirstReport.md` – this report.
 
@@ -155,13 +155,13 @@ Mathematically:
 
 This can be written as:
 
-Score = Σ_{g∈G} 1{ f(g) = 1 }
+Score = Σ\_{g∈G} 1{ f(g) = 1 }
 
 Where 1{·} is the indicator function.
 
 Limitations: This formulation does not cap contributions by frequency in A and ignores duplicates in G. If multiset matching is desired, the alternative logic becomes:
 
-Score = Σ_{g∈G} 1{ f_t(g) > 0 }, with f_t updated per match: f_t(g) ← f_t(g) − 1.
+Score = Σ\_{g∈G} 1{ f_t(g) > 0 }, with f_t updated per match: f_t(g) ← f_t(g) − 1.
 
 ### Whisper Transcription Output
 
@@ -194,47 +194,54 @@ These allow optional post-processing formulas like:
 ## Recommendations and Next Steps
 
 1. Clarify scoring rules:
-    - Decide between unique-only matching (current) versus multiset matching (common in memory/word games).
-    - Add tests covering case sensitivity, punctuation, and duplicates.
+
+   - Decide between unique-only matching (current) versus multiset matching (common in memory/word games).
+   - Add tests covering case sensitivity, punctuation, and duplicates.
 
 2. Introduce a backend API:
-    - Consider FastAPI with endpoints like POST `/score` { actual_words, guessed_words } returning { score }.
-    - Optional: Add a POST `/transcribe` endpoint to process uploaded audio and return Whisper results (once integrated).
+
+   - Consider FastAPI with endpoints like POST `/score` { actual_words, guessed_words } returning { score }.
+   - Optional: Add a POST `/transcribe` endpoint to process uploaded audio and return Whisper results (once integrated).
 
 3. Packaging and dependencies:
-    - Add `requirements.txt` including at least: `fastapi`, `uvicorn`, `pydantic`, `whisper`, `torch` (exact versions tbd).
-    - Create a minimal app structure and tests with `pytest`.
+
+   - Add `requirements.txt` including at least: `fastapi`, `uvicorn`, `pydantic`, `whisper`, `torch` (exact versions tbd).
+   - Create a minimal app structure and tests with `pytest`.
 
 4. Frontend wiring:
-    - Replace static page with a simple form to submit words for scoring.
-    - Later, add audio upload for transcription.
+
+   - Replace static page with a simple form to submit words for scoring.
+   - Later, add audio upload for transcription.
 
 5. Data handling:
-    - If storing results, add a simple persistence layer (SQLite or a cloud DB) and schema.
+
+   - If storing results, add a simple persistence layer (SQLite or a cloud DB) and schema.
 
 6. Performance and reliability:
-    - If Whisper runs on CPU, preload the model once per process.
-    - Use `/health` endpoint and logging around inference calls.
+   - If Whisper runs on CPU, preload the model once per process.
+   - Use `/health` endpoint and logging around inference calls.
 
 ---
 
 ## Example Test Cases (for the scoring logic)
 
 1. Unique match only (current logic):
-    - A = ["cat", "dog"], G = ["cat", "cat", "dog"] → score = 3 (because f(cat)=1 and f(dog)=1; duplicates in G all score).
+
+   - A = ["cat", "dog"], G = ["cat", "cat", "dog"] → score = 3 (because f(cat)=1 and f(dog)=1; duplicates in G all score).
 
 2. Multiset matching (proposed variant):
-    - A = ["cat", "dog"], G = ["cat", "cat", "dog"] → score = 3 under current logic; proposed becomes 3 only if you decrement counts; if A = ["cat", "dog"], G = ["cat", "cat", "dog", "dog"] → proposed score = 3 (since only one "dog" is available).
+
+   - A = ["cat", "dog"], G = ["cat", "cat", "dog"] → score = 3 under current logic; proposed becomes 3 only if you decrement counts; if A = ["cat", "dog"], G = ["cat", "cat", "dog", "dog"] → proposed score = 3 (since only one "dog" is available).
 
 3. Case sensitivity:
-    - A = ["Cat"], G = ["cat"] → score = 0 unless normalized.
+
+   - A = ["Cat"], G = ["cat"] → score = 0 unless normalized.
 
 4. Duplicates in A:
-    - A = ["cat", "cat"], G = ["cat"] → current score = 0 (f(cat)=2); multiset variant score = 1.
+   - A = ["cat", "cat"], G = ["cat"] → current score = 0 (f(cat)=2); multiset variant score = 1.
 
 ---
 
 ## Conclusion
 
-Early Spark currently contains a foundational scoring utility and early ASR experiments. Formalizing the scoring rules, exposing an API, and integrating the transcription pipeline will turn the repository into a functional prototype. The suggestions above outline a low-risk path from this baseline to an end-to-end, testable application.
-
+ForeKnow currently contains a foundational scoring utility and early ASR experiments. Formalizing the scoring rules, exposing an API, and integrating the transcription pipeline will turn the repository into a functional prototype. The suggestions above outline a low-risk path from this baseline to an end-to-end, testable application.

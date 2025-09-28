@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Early Spark - Dementia Early Detection System",
+  title: "ForeKnow - Dementia Early Detection System",
   description:
     "Advanced cognitive assessment system for early dementia detection through interactive games and AI analysis",
 };

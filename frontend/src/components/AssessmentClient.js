@@ -91,7 +91,7 @@ function AssessmentFlow() {
           <div className="flex items-center justify-center space-x-3 mb-4">
             <Brain className="h-12 w-12" style={{ color: "#1e3a8a" }} />
             <h1 className="text-3xl font-bold text-gray-900">
-              Early Spark Assessment
+              ForeKnow Assessment
             </h1>
           </div>
           <p className="text-lg text-gray-600">

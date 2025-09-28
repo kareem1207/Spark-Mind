@@ -1,4 +1,4 @@
-# Early Spark AI Pipeline - Fallback System Documentation
+# ForeKnow AI Pipeline - Fallback System Documentation
 
 ## Problem Solved
 
@@ -38,7 +38,7 @@ def retry_with_backoff(func, max_retries=3, base_delay=2, max_delay=60):
         except Exception as e:
             if attempt == max_retries - 1:
                 raise e
-            
+
             delay = min(base_delay * (2 ** attempt) + random.uniform(0, 1), max_delay)
             print(f"[RETRY] Attempt {attempt + 1} failed: {str(e)[:100]}... Retrying in {delay:.1f}s")
             time.sleep(delay)
@@ -125,7 +125,7 @@ Results are now structured as lists to support multiple audio files:
     {"pause_count": 3, "speech_rate": 145}   # File 2
   ],
   "sentiment": [             # List of sentiment per audio file
-    {"compound": 0.7, "positive": 0.8},      # File 1  
+    {"compound": 0.7, "positive": 0.8},      # File 1
     {"compound": 0.5, "positive": 0.6}       # File 2
   ],
   "transcriptions": [        # List of transcriptions per audio file
@@ -146,7 +146,7 @@ clinical_evaluator:
   role: "Cognitive Assessment Physician"
   goal: "Generate comprehensive cognitive assessment reports"
   backstory: "Expert in neuropsychological assessment"
-  llm: "gemini/gemini-2.0-flash"  # or your preferred model
+  llm: "gemini/gemini-2.0-flash" # or your preferred model
 
 summary_analyst:
   role: "Medical Summary Specialist"
@@ -184,4 +184,4 @@ Look for these log messages to understand system behavior:
 - `[INFO] Using fallback X generation` - Fallback mode activated
 - `[INFO] Assessment completed using fallback mode` - Final fallback status
 
-This ensures your Early Spark cognitive assessment system remains reliable and user-friendly even during AI service outages.
+This ensures your ForeKnow cognitive assessment system remains reliable and user-friendly even during AI service outages.

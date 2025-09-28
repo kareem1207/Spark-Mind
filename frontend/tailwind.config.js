@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Early Spark Color Palette
+        // ForeKnow Color Palette
         "early-spark": {
           navy: "#2e4156", // Primary dark color
           teal: "#587c90", // Secondary accent
@@ -16,7 +16,7 @@ module.exports = {
           beige: "#f3efec", // Background/neutral
           white: "#ffffff", // Pure white
         },
-        // Map common color names to Early Spark palette
+        // Map common color names to ForeKnow palette
         primary: {
           50: "#f0f4f7",
           100: "#dae7ee",

@@ -1,50 +1,50 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-/* Early Spark Color Palette - Custom CSS for complex selectors */
+/* ForeKnow Color Palette - Custom CSS for complex selectors */
 @layer components {
-  .bg-early-spark-navy { 
+  .bg-early-spark-navy {
     background-color: #2e4156;
   }
-  .bg-early-spark-teal { 
+  .bg-early-spark-teal {
     background-color: #587c90;
   }
-  .bg-early-spark-sky-blue { 
+  .bg-early-spark-sky-blue {
     background-color: #c7d9e5;
   }
-  .bg-early-spark-beige { 
+  .bg-early-spark-beige {
     background-color: #f3efec;
   }
-  .bg-early-spark-white { 
+  .bg-early-spark-white {
     background-color: #ffffff;
   }
 
-  .text-early-spark-navy { 
+  .text-early-spark-navy {
     color: #2e4156;
   }
-  .text-early-spark-teal { 
+  .text-early-spark-teal {
     color: #587c90;
   }
-  .text-early-spark-sky-blue { 
+  .text-early-spark-sky-blue {
     color: #c7d9e5;
   }
-  .text-early-spark-beige { 
+  .text-early-spark-beige {
     color: #f3efec;
   }
-  .text-early-spark-white { 
+  .text-early-spark-white {
     color: #ffffff;
   }
 
-  .border-early-spark-navy { 
+  .border-early-spark-navy {
     border-color: #2e4156;
   }
-  .border-early-spark-teal { 
+  .border-early-spark-teal {
     border-color: #587c90;
   }
-  .border-early-spark-sky-blue { 
+  .border-early-spark-sky-blue {
     border-color: #c7d9e5;
   }
 

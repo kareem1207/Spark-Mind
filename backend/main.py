@@ -15,7 +15,7 @@ from AiAgent import run_pipeline
 
 load_dotenv()
 
-app = FastAPI(title="Early Spark Cognitive Assessment API", version="0.1.0")
+app = FastAPI(title="ForeKnow Cognitive Assessment API", version="0.1.0")
 
 origins = [
 	"http://localhost:3000",

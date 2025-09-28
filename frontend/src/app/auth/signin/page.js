@@ -42,7 +42,7 @@ export default function SignIn() {
                   className="text-2xl font-bold"
                   style={{ color: "#2e4156" }}
                 >
-                  Early Spark
+                  ForeKnow
                 </span>
               </div>
               <h1

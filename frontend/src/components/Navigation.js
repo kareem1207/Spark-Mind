@@ -80,7 +80,7 @@ export default function Navigation() {
                 ></div>
               </div>
               <span className="text-xl font-bold" style={{ color: "#2e4156" }}>
-                Early Spark
+                ForeKnow
               </span>
             </Link>
           </div>

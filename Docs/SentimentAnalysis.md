@@ -31,8 +31,8 @@ Unlike the general repository report, this brief focuses solely on the sentiment
 - Model: `tabularisai/multilingual-sentiment-analysis`
 - Cache directory: `D:\\Models\\Sentiment`
 - Loading strategy:
-  1) Attempt normal load from cache (fp32 on CPU) for both tokenizer and model.
-  2) On OSError, remove the corresponding snapshot directory under the cache and force a clean re-download.
+  1. Attempt normal load from cache (fp32 on CPU) for both tokenizer and model.
+  2. On OSError, remove the corresponding snapshot directory under the cache and force a clean re-download.
 
 ### Inference Flow
 
@@ -89,4 +89,4 @@ Given an example text, the notebook prints:
 
 ## Conclusion
 
-The notebook establishes a clear, reproducible path from raw text to a probabilistic sentiment profile and a single interpretable score. With small adjustments (weight tuning, optional lighter model, and API wrapping), this can be promoted from a research notebook into a reliable component of the broader Early Spark pipeline.
+The notebook establishes a clear, reproducible path from raw text to a probabilistic sentiment profile and a single interpretable score. With small adjustments (weight tuning, optional lighter model, and API wrapping), this can be promoted from a research notebook into a reliable component of the broader ForeKnow pipeline.

@@ -131,7 +131,7 @@ export default function DashboardClient({ session }) {
     );
   }
 
-  const COLORS = ["#2e4156", "#587c90", "#c7d9e5", "#f3efec"]; // Early Spark colors
+  const COLORS = ["#2e4156", "#587c90", "#c7d9e5", "#f3efec"]; // ForeKnow colors
 
   return (
     <div className="min-h-screen bg-gradient-early-spark-neutral py-8">

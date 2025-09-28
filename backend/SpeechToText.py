@@ -10,7 +10,7 @@ class SpeechToTextAnalyzer:
 
     def __init__(
         self,
-        audio_path: str = r"d:\Early Spark\backend\audio\audio2.mp3",
+        audio_path: str = r"d:\ForeKnow\backend\audio\audio2.mp3",
         cache_dir: str = r"D:\Models\whisper_cache",
         model_size: str = "small",
         save_json_path: Optional[str] = "transcription.json",

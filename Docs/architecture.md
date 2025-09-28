@@ -1,8 +1,8 @@
-# Early Spark - Dementia Early Detection System Architecture
+# ForeKnow - Dementia Early Detection System Architecture
 
 ## Overview
 
-The Early Spark system is a comprehensive web-based platform for early dementia detection through cognitive assessments. It combines four different cognitive games with AI-powered analysis to provide risk assessments and detailed reports.
+The ForeKnow system is a comprehensive web-based platform for early dementia detection through cognitive assessments. It combines four different cognitive games with AI-powered analysis to provide risk assessments and detailed reports.
 
 ## System Architecture
 
@@ -15,34 +15,34 @@ graph TB
         D[Dashboard & Results]
         E[API Integration Layer]
     end
-    
+
     subgraph "Backend Layer (Python/FastAPI)"
         F[REST API Endpoints]
         G[AI Analysis Pipeline]
         H[Data Processing]
         I[Report Generation]
     end
-    
+
     subgraph "AI Services"
         J[Speech-to-Text Service]
         K[Sentiment Analysis]
         L[Risk Assessment Engine]
         M[Report Generation AI]
     end
-    
+
     subgraph "Data Storage"
         N[(User Data)]
         O[(Game Results)]
         P[(Audio Files)]
         Q[(Generated Reports)]
     end
-    
+
     subgraph "External Services"
         R[Google OAuth 2.0]
         S[OpenAI GPT API]
         T[Cloud Speech API]
     end
-    
+
     A --> B
     B --> R
     C --> E
@@ -80,6 +80,7 @@ graph TB
 - **Future User DB**: Placeholder for per-user assessment history & personalization.
 
 ## Data Flow Summary
+
 1. User plays a game (or records speech) → scores or audio captured.
 2. Frontend API client sends JSON / multipart to FastAPI.
 3. FastAPI invokes `run_pipeline` (with or without audio) → generates metrics & artifacts.
@@ -88,6 +89,7 @@ graph TB
 6. (Future) Auth ties submissions to a user record for history.
 
 ## Sequence (Speech Assessment) - Textual
+
 1. User clicks Start / Stop on Speech game → obtains `speech.webm` Blob.
 2. Frontend uploads via `POST /api/assessment/speech` (multipart form-data).
 3. FastAPI saves audio → calls pipeline → Whisper transcribes → metrics & risk computed.
@@ -96,8 +98,9 @@ graph TB
 6. UI displays risk and offers download link.
 
 ## Reliability / Next Steps
+
 - Add async task queue if latency from report generation grows.
 - Add caching or incremental updates for long audio streams.
 - Persist per-user assessment history once DB is integrated.
 
-*(This file serves as a readable fallback for environments where `.drawio` cannot be opened.)*
+_(This file serves as a readable fallback for environments where `.drawio` cannot be opened.)_
