@@ -1,0 +1,17 @@
+Subject: Your Cognitive Assessment Results
+
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate you taking proactive steps towards understanding your cognitive health.
+
+Based on the assessment, your Image Recall score indicates a potential area of weakness in visual memory. Your Memory Game score suggests your short-term and working memory fall within the average range. The Stroop Colour score warrants further review to determine the underlying cause. Unfortunately, speech and sentiment data are unavailable at this time, which limits the overall assessment.
+
+We recommend sharing these results with a healthcare professional for a comprehensive evaluation and personalized guidance. Further neurological or neuropsychological testing may also be beneficial.
+
+DISCLAIMER: This is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Remember, proactive cognitive care is an investment in your overall well-being.
+
+Sincerely,
+
+The Cognitive Assessment Team

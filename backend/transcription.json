@@ -1,28 +1,91 @@
 {
-    "text": " So...",
+    "text": " so, right ? i did not break broadcast during ...",
     "segments": [
         {
             "id": 0,
             "seek": 0,
             "start": 0.0,
-            "end": 1.3,
-            "text": " So...",
+            "end": 3.54,
+            "text": " so, right ? i did not break broadcast during ...",
             "tokens": [
-                50364,
-                407,
-                485,
-                50464
+                50412,
+                370,
+                11,
+                558,
+                2506,
+                741,
+                630,
+                406,
+                1821,
+                9975,
+                1830,
+                1097,
+                50667
             ],
-            "temperature": 0.0,
-            "avg_logprob": -0.9756996154785156,
-            "compression_ratio": 0.38461538461538464,
-            "no_speech_prob": 0.3843212127685547,
+            "temperature": 1.0,
+            "avg_logprob": -4.14787346976144,
+            "compression_ratio": 0.8888888888888888,
+            "no_speech_prob": 0.29871729016304016,
             "words": [
                 {
-                    "word": " So...",
+                    "word": " so,",
                     "start": 0.0,
-                    "end": 1.3,
-                    "probability": 0.35821467638015747
+                    "end": 0.94,
+                    "probability": 0.19404758512973785
+                },
+                {
+                    "word": " right",
+                    "start": 1.22,
+                    "end": 1.44,
+                    "probability": 0.01929979771375656
+                },
+                {
+                    "word": " ?",
+                    "start": 1.44,
+                    "end": 1.76,
+                    "probability": 0.0006960139144212008
+                },
+                {
+                    "word": " i",
+                    "start": 1.76,
+                    "end": 1.76,
+                    "probability": 0.23782935738563538
+                },
+                {
+                    "word": " did",
+                    "start": 1.76,
+                    "end": 1.92,
+                    "probability": 0.49726566672325134
+                },
+                {
+                    "word": " not",
+                    "start": 1.92,
+                    "end": 2.14,
+                    "probability": 0.9675406217575073
+                },
+                {
+                    "word": " break",
+                    "start": 2.14,
+                    "end": 2.48,
+                    "probability": 0.04303210973739624
+                },
+                {
+                    "word": " broadcast",
+                    "start": 2.48,
+                    "end": 2.9,
+                    "probability": 3.2980846299324185e-05
+                },
+                {
+                    "word": " during",
+                    "start": 2.9,
+                    "end": 3.28,
+                    "probability": 0.003760558320209384
+                },
+                {
+                    "word": " ...",
+                    "start": 3.28,
+                    "end": 3.54,
+                    "probability": 0.0003926961508113891
                 }
             ]
         }

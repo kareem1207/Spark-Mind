@@ -11,8 +11,6 @@ from dotenv import load_dotenv
 from fastapi import Request
 import time
 
-from torch import int16
-
 from AiAgent import run_pipeline
 
 load_dotenv()
@@ -123,6 +121,7 @@ async def submit_tests(
 				"image_recall": image_recall_score,
 			}
 			ai_result = run_pipeline(
+				sentiment_dir="D:/Models/Sentiment",
 				scores=scores,
 				audio_path=audio_file_paths,
 				offline_sentiment=False
@@ -191,7 +190,7 @@ async def create_speech_assessment(
 		except Exception as e:
 			print(f"Error deleting file {existing_file}: {e}")
 
-	result = run_pipeline(scores=scores, audio_path=target_path, offline_sentiment=offline_sentiment)
+	result = run_pipeline(scores=scores, sentiment_dir="D:/Models/Sentiment", audio_path=target_path, offline_sentiment=offline_sentiment)
 	return {
 		"summary": result.get("summary"),
 		"scores": result.get("scores"),

@@ -1,0 +1,17 @@
+Subject: Cognitive Assessment Results
+
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate you taking the time to prioritize your cognitive health.
+
+The assessment indicated potential areas of difficulty in memory and executive function. Specifically, your results showed challenges in the memory game and image recall tasks, as well as the Stroop Colour test. We also noted that the speech analysis metrics might not be accurate and require further verification. The sentiment analysis indicated a neutral sentiment.
+
+These results suggest the value of a comprehensive evaluation to better understand your cognitive profile. We recommend consulting with a healthcare professional for further assessment and guidance.
+
+**DISCLAIMER:** It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps towards understanding your cognitive well-being is commendable. We hope this assessment provides valuable insights and encourages you to continue prioritizing your health.
+
+Sincerely,
+
+The Patient Engagement Team

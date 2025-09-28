@@ -72,7 +72,8 @@ function AssessmentFlow() {
     }
   };
 
-  if (submissionSuccess) {
+  // Show loading screen immediately when submitting or when submission is successful
+  if (isSubmitting || submissionSuccess) {
     return <AssessmentComplete onReset={resetAssessment} />;
   }
 

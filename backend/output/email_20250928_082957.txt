@@ -1,0 +1,21 @@
+```email
+Subject: Cognitive Assessment Result
+
+Dear User,
+
+Thank you for completing the cognitive assessment.
+
+Based on the data collected, we observed the following: Your Memory Game Score was 1. The speech analysis indicated a Pause Density of 50% and Speech Fluency of 90 words per second. Lexical Diversity was calculated at 100%, and the Weighted Sentiment Score was 59.39, with a Neutral sentiment.
+
+Please note that due to missing data for the Stroop Colour and Image Recall games, and concerns about the speech analysis accuracy given the short speech sample, the assessment results are incomplete. A definitive cognitive risk assessment is not possible with the current dataset.
+
+If you have any concerns based on these results, we strongly recommend consulting with a healthcare professional for a comprehensive cognitive evaluation.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps for your cognitive health is always a positive endeavor.
+
+Sincerely,
+
+Patient Engagement Email Agent
+```
