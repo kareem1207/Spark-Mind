@@ -1,0 +1,20 @@
+Overall Cognitive Risk Level: Mild
+
+This cognitive assessment suggests some potential areas of concern that warrant further investigation. Memory recall scored low at 1 (memory recall) and 4 (image recall), which may indicate difficulties with short-term or visual memory. Speech analysis revealed a high pause density of 50% in one audio file (total time 2.22 seconds), possibly pointing to word-finding difficulties. The Stroop Colour score was 25. Sentiment analysis of the same file showed a "positive" sentiment with a weighted score of 78.779. The Heuristic Cognitive Risk Assessment suggests potential cognitive concerns.
+
+Key Highlights:
+
+*   Memory Recall: Low score of 1
+*   Image Recall: Low score of 4
+*   Stroop Colour: Score of 25
+*   File 2: Total time 2.22 seconds, pause density of 50%, 1 repeated word, lexical diversity of 81.82%, speech fluency of 84.86 words/sec.
+*   File 2 Sentiment: "positive" with a weighted score of 78.779.
+
+Next Steps:
+
+1.  Repeat the Assessment: To confirm the consistency of the results, particularly addressing the missing data in files 1 and 3.
+2.  Consult a Healthcare Provider: Share this report with a doctor for further evaluation and possible neuropsychological testing.
+3.  Consider Neuroimaging: Discuss the potential benefits of brain imaging (e.g., MRI) with your healthcare provider.
+4.  Monitor Speech Patterns: Observe and track any changes in speech fluency, pauses, and vocabulary.
+
+DISCLAIMER:It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.

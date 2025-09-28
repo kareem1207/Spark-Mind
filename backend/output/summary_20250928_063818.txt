@@ -1,0 +1,20 @@
+This assessment suggests some areas where your cognitive function could be improved. While your visual memory (image recall score of 32) appears to be a relative strength, your short-term memory (memory game score of 5) and processing speed (Stroop test score of 350) could be better. Speech patterns indicate potential challenges with word-finding or fluency, and the sentiment analysis suggests an overall negative mood (combined score of 54.722). It's important to remember that this is just one assessment and further evaluation is recommended for a complete picture.
+
+Here are some key highlights:
+
+*   **Memory Game:** Score of 5 suggests potential short-term memory concerns.
+*   **Image Recall:** Score of 32 indicates reasonable visual memory.
+*   **Stroop Colour:** Score of 350 suggests slower cognitive processing speed.
+*   **Speech Patterns:** High pause densities (45.03% to 50.0%), variable lexical diversity (50.0% to 85.19%), and filler word usage (0.0% to 10.81%) indicate possible speech-related difficulties. Lexical diversity refers to the range of vocabulary used.
+*   **Sentiment:** Combined negative sentiment score of 54.722 suggests a prevailing negative mood.
+
+Here's a checklist of recommended next steps:
+
+1.  Consult a healthcare professional for a comprehensive cognitive evaluation.
+2.  Consider a speech and language assessment to evaluate your speech patterns.
+3.  Evaluate your mood and emotional state.
+4.  Discuss appropriate interventions or strategies with your doctor based on the evaluation results.
+
+Report Summary: Mild
+
+DISCLAIMER:It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.

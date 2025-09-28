@@ -1,0 +1,17 @@
+Subject: Cognitive Assessment Results
+
+Dear [User],
+
+Thank you for completing the cognitive assessment. We appreciate you taking the time to prioritize your cognitive health.
+
+The assessment indicates a mild overall cognitive risk level, suggesting some potential areas of concern that warrant further investigation. Specifically, the assessment highlighted potential difficulties with memory recall and image recall. Speech analysis revealed a high pause density in one audio file, and the Stroop Colour test results also indicated an area for review. Sentiment analysis of the same file registered a "positive" sentiment.
+
+To ensure accurate results, we recommend repeating the assessment. We also strongly encourage you to share these results with a healthcare provider for further evaluation.
+
+*DISCLAIMER: This is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.*
+
+Taking proactive steps for your cognitive well-being is commendable.
+
+Sincerely,
+
+Patient Engagement Email Agent

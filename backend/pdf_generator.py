@@ -218,7 +218,7 @@ class PDFGenerator:
 					# Process the part as a separate word
 					test_line = current_line + (" " if current_line else "") + part
 					
-					pdf.set_font(pdf.font_family, pdf.font_style, int(pdf.font_size_pt))
+					pdf.set_font(pdf.font_family, pdf.font_style, int(pdf.font_size_pt)) # type: ignore
 					text_width = pdf.get_string_width(test_line)
 					
 					if text_width <= page_width or not current_line:
@@ -234,7 +234,7 @@ class PDFGenerator:
 			
 			# Get text width for the test line
 			try:
-				pdf.set_font(pdf.font_family, pdf.font_style, int(pdf.font_size_pt))
+				pdf.set_font(pdf.font_family, pdf.font_style, int(pdf.font_size_pt)) # type: ignore
 				text_width = pdf.get_string_width(test_line)
 			except:
 				# Fallback estimation if get_string_width fails

@@ -1,0 +1,15 @@
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate you taking the time to prioritize your cognitive health.
+
+The results indicate potential mild impairment in short-term memory, based on the Memory Game score. The Image Recall score requires further context for interpretation. The Stroop Colour score may be within a normal range, but further review is needed. Speech analysis revealed an unusually high pause time. The sentiment analysis suggests a positive emotional tone.
+
+Given these initial findings, we recommend repeating the assessment, paying close attention to audio quality and ensuring a longer speech sample. Consulting with a healthcare professional for a comprehensive evaluation is advisable to gain a more complete understanding of your cognitive health.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps towards understanding your cognitive well-being is a positive sign.
+
+Sincerely,
+
+The Cognitive Assessment Team

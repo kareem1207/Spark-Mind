@@ -1,0 +1,24 @@
+This cognitive assessment reveals some areas that warrant further attention. The Memory Game and Image Recall scores were both 0, which could indicate difficulties with memory or task completion. The Stroop Colour score of 29 suggests potential challenges with cognitive interference. Additionally, a negative sentiment was detected in the speech sample. Due to the limitations of a very short speech sample, these results should be viewed as preliminary indicators and require further investigation.
+
+*   **Key Concerns:**
+    *   Memory Game: 0
+    *   Image Recall: 0
+    *   Stroop Colour: 29
+    *   Negative Sentiment: Weighted score of 40.654
+    *   Very short speech sample (1.2 seconds)
+
+*   **Strengths:**
+    *   Lexical Diversity: 100.0% (though difficult to interpret due to short speech sample)
+    *   Speech fluency (words/sec): 120.0 (though difficult to interpret due to short speech sample)
+
+**Next Steps:**
+
+*   Schedule a comprehensive neurological evaluation.
+*   Consider neuropsychological testing for detailed cognitive assessment.
+*   Collect a longer speech sample for analysis.
+*   Evaluate for potential mood disorders with a mental health assessment.
+*   Repeat the digital cognitive tasks to rule out errors.
+
+**Report Summary:** Mild
+
+DISCLAIMER:It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.

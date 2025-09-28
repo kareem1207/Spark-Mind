@@ -1,0 +1,13 @@
+Subject: Cognitive Assessment Summary
+
+Dear User,
+
+Thank you for completing the recent cognitive assessment. We appreciate your engagement in understanding your cognitive health.
+
+This assessment indicated possible difficulties in memory function, as suggested by the memory game and image recall results. Speech analysis revealed a high pause density, potentially indicating word-finding challenges. The Stroop Colour test score was within the average range. Due to a likely error, the speech fluency result should be disregarded. The sentiment analysis registered as neutral.
+
+It's important to remember that this assessment is not a diagnosis.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+We recommend consulting with a healthcare professional for a comprehensive evaluation and personalized advice based on these findings. Proactive steps toward understanding your cognitive well-being can make a significant difference.

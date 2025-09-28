@@ -1,19 +1,76 @@
 {
-  "stroop_colour": 30,
-  "memory_game": 33,
-  "image_recall": 1,
+  "stroop_colour": 0,
+  "memory_game": 1,
+  "image_recall": 0,
   "speech_metrics": [
-    {}
-  ],
-  "sentiment": [
-    {}
-  ],
-  "combined_sentiment": {},
-  "transcriptions": [
     {
-      "text": "",
-      "segments": []
+      "Total time": 1.3,
+      "Total pause time": 0.0,
+      "Pause density (%)": 0.0,
+      "Repeated words": 0.0,
+      "Filler words": 1.0,
+      "Filler frequency (%)": 100.0,
+      "Unique words": 1.0,
+      "Lexical diversity (%)": 100.0,
+      "Speech fluency (words/sec)": 40.0
     }
   ],
-  "transcribed_text": ""
+  "sentiment": [
+    {
+      "label": "neutral",
+      "probs": [
+        0.06564603000879288,
+        0.10210099071264267,
+        0.44455859065055847,
+        0.18604062497615814,
+        0.20165377855300903
+      ],
+      "weighted_score": 67.119
+    }
+  ],
+  "combined_sentiment": {
+    "label": "neutral",
+    "probs": [
+      0.06564603000879288,
+      0.10210099071264267,
+      0.44455859065055847,
+      0.18604062497615814,
+      0.20165377855300903
+    ],
+    "weighted_score": 67.119
+  },
+  "transcriptions": [
+    {
+      "text": " So...",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 1.3,
+          "text": " So...",
+          "tokens": [
+            50364,
+            407,
+            485,
+            50464
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.9756996154785156,
+          "compression_ratio": 0.38461538461538464,
+          "no_speech_prob": 0.3843212127685547,
+          "words": [
+            {
+              "word": " So...",
+              "start": 0.0,
+              "end": 1.3,
+              "probability": 0.35821467638015747
+            }
+          ]
+        }
+      ],
+      "language": "en"
+    }
+  ],
+  "transcribed_text": "So..."
 }

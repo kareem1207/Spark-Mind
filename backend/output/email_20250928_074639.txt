@@ -1,0 +1,19 @@
+Subject: Cognitive Assessment Results
+
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate you taking the time to prioritize your cognitive health.
+
+Our analysis indicates potential areas for further evaluation. Specifically, the Memory Game and Image Recall scores suggest possible memory-related difficulties. The Stroop Colour test result may point to challenges with cognitive interference. A negative sentiment was detected, but it is difficult to interpret this result due to the very short speech sample length.
+
+It is important to note the strengths observed, including high Lexical Diversity and speech fluency. However, these are also difficult to interpret due to the short speech sample length.
+
+Given these findings, we recommend consulting with a healthcare professional for a comprehensive evaluation. Further neuropsychological testing and a longer speech sample analysis might also be beneficial.
+
+*DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.*
+
+Taking proactive steps towards cognitive wellness is a valuable investment in your overall health and well-being.
+
+Sincerely,
+
+The Patient Engagement Team

@@ -1,0 +1,25 @@
+This cognitive assessment reveals some areas of concern, particularly in memory and speech. The Memory Game score was very low at 1, and the Image Recall was also low at 3, suggesting potential difficulties with memory and visual processing. The speech analysis showed very short duration (3.04 seconds), high pause time (3.04 seconds) resulting in a high pause density (50.0%), low lexical diversity (16.6667%), and repetitive speech patterns, raising concerns about language production and fluency. The Stroop Colour score of 43 requires further context for interpretation. Sentiment was neutral with a weighted score of 60.637. Further evaluation is recommended to understand these findings better.
+
+**Highlights:**
+
+*   Memory Game score: 1 (very poor performance)
+*   Image Recall score: 3 (low number of images recalled)
+*   Stroop Colour score: 43 (requires further context)
+*   Total Time: 3.04 seconds (very short speech duration)
+*   Total Pause Time: 3.04 seconds (high pause time)
+*   Pause Density: 50.0% (likely inaccurate, but concerning)
+*   Lexical Diversity: 16.6667% (very low, indicating limited vocabulary)
+*   Sentiment Analysis: neutral, weighted score 60.637
+
+**Next Steps:**
+
+*   Schedule a comprehensive neuropsychological evaluation.
+*   Consult with a neurologist.
+*   Seek a speech and language assessment.
+*   Review medical history and medications with your doctor.
+
+Cognitive Risk Level: Elevated
+
+Heuristic Cognitive Risk Category & Probability: Based on these limited metrics, there are some signals of concern.
+
+DISCLAIMER:It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.

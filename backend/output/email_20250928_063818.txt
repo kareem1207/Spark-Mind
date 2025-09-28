@@ -1,0 +1,19 @@
+Subject: Thank you for completing the Cognitive Assessment
+
+Dear [User],
+
+Thank you for taking the time to complete our cognitive assessment. We appreciate your participation.
+
+Based on your results, we observed relative strengths in visual memory (Image Recall). However, the assessment also indicated potential areas for improvement in short-term memory (Memory Game) and processing speed (Stroop Colour). Additionally, speech patterns suggest possible challenges, and the sentiment analysis indicated a negative mood.
+
+Specifically, your Image Recall score suggests reasonable visual memory. Your Memory Game score suggests potential short-term memory concerns. Your Stroop Colour score suggests slower cognitive processing speed. Your speech patterns, in terms of pause densities, lexical diversity, and filler word usage, indicate possible speech-related difficulties. Finally, your sentiment score suggests a prevailing negative mood.
+
+Remember, this assessment provides only a snapshot, and a comprehensive evaluation by a healthcare professional is highly recommended.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+We encourage you to discuss these results with your doctor or other qualified healthcare provider to determine the best course of action. Proactive attention to your cognitive health can make a significant difference.
+
+Sincerely,
+
+The [Company Name] Team

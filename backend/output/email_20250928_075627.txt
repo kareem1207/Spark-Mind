@@ -1,0 +1,17 @@
+Subject: Thank you for completing the Cognitive Assessment
+
+Dear User,
+
+Thank you for taking the time to complete our cognitive assessment. We appreciate your participation.
+
+Based on the assessment, we observed some areas that warrant further attention, particularly in memory and speech-related tasks. Specifically, the Memory Game score and Image Recall were low. Speech analysis indicated short speech duration, high pause time, elevated pause density, and low lexical diversity. The Stroop Colour score requires further context for proper interpretation. The sentiment analysis result was neutral.
+
+These findings suggest potential difficulties that may benefit from a more in-depth evaluation. We recommend consulting with healthcare professionals for a comprehensive neuropsychological evaluation, a neurological consultation, and potentially a speech and language assessment. It's also important to review your medical history and medications with your doctor.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps to understand your cognitive health is a positive move. We wish you all the best in your journey.
+
+Sincerely,
+
+Patient Engagement Email Agent

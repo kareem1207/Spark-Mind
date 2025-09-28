@@ -1,0 +1,19 @@
+Subject: Cognitive Assessment Summary
+
+Dear User,
+
+Thank you for taking the time to complete our cognitive assessment.
+
+Based on the data collected, we observed limited interpretable results due to incomplete tasks and a brief speech sample. Specifically, the Stroop Colour and Image Recall tests appear to be incomplete. While a score was recorded for the Memory Game, it requires further context for interpretation. The very short speech sample resulted in high filler frequency and limited data on verbal expression. Sentiment analysis indicated a neutral sentiment.
+
+For a more accurate evaluation, we recommend repeating the assessment, ensuring all tasks are completed and providing a longer speech sample.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+If you have any concerns or notice changes in cognitive abilities, please consult with a healthcare professional for further evaluation.
+
+Taking proactive steps to understand your cognitive health is a positive endeavor.
+
+Sincerely,
+
+The Patient Engagement Team
