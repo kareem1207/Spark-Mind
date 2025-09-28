@@ -1,19 +1,998 @@
 {
-  "stroop_colour": 30,
-  "memory_game": 33,
-  "image_recall": 1,
+  "stroop_colour": 190,
+  "memory_game": 4,
+  "image_recall": 28,
   "speech_metrics": [
-    {}
-  ],
-  "sentiment": [
-    {}
-  ],
-  "combined_sentiment": {},
-  "transcriptions": [
     {
-      "text": "",
-      "segments": []
+      "Total time": 29.88,
+      "Total pause time": 27.9,
+      "Pause density (%)": 48.2866,
+      "Repeated words": 25.0,
+      "Filler words": 0.0,
+      "Filler frequency (%)": 0.0,
+      "Unique words": 23.0,
+      "Lexical diversity (%)": 35.9375,
+      "Speech fluency (words/sec)": 40.72
+    },
+    {
+      "Total time": 21.8,
+      "Total pause time": 20.22,
+      "Pause density (%)": 48.1199,
+      "Repeated words": 20.0,
+      "Filler words": 5.0,
+      "Filler frequency (%)": 11.1111,
+      "Unique words": 11.0,
+      "Lexical diversity (%)": 24.4444,
+      "Speech fluency (words/sec)": 37.13
     }
   ],
-  "transcribed_text": ""
+  "sentiment": [
+    {
+      "label": "positive",
+      "probs": [
+        0.028200384229421616,
+        0.06416177749633789,
+        0.07015563547611237,
+        0.5285860896110535,
+        0.30889609456062317
+      ],
+      "weighted_score": 80.516
+    },
+    {
+      "label": "positive",
+      "probs": [
+        0.09986262768507004,
+        0.1853717863559723,
+        0.05736875534057617,
+        0.49487558007240295,
+        0.16252127289772034
+      ],
+      "weighted_score": 68.696
+    }
+  ],
+  "combined_sentiment": {
+    "label": "positive",
+    "probs": [
+      0.021568050608038902,
+      0.04485495015978813,
+      0.040103498846292496,
+      0.6899563670158386,
+      0.2035171538591385
+    ],
+    "weighted_score": 80.18
+  },
+  "transcriptions": [
+    {
+      "text": " Good morning, I had a favorite breakfast, Upma, which is made of Upma Rawal. This is one of our favorite breakfasts in our home. We will do it almost once in two days. The people in the home will demand we want Upma, we want Upma for every two days, especially Sundays, the default breakfast is Upma, they want to do it only Upma.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 7.66,
+          "text": " Good morning, I had a favorite breakfast, Upma, which is made of Upma Rawal.",
+          "tokens": [
+            50364,
+            2205,
+            2446,
+            11,
+            286,
+            632,
+            257,
+            2954,
+            8201,
+            11,
+            5858,
+            1696,
+            11,
+            597,
+            307,
+            1027,
+            295,
+            5858,
+            1696,
+            23732,
+            304,
+            13,
+            50764
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.2744036515553792,
+          "compression_ratio": 1.6064516129032258,
+          "no_speech_prob": 0.04940742999315262,
+          "words": [
+            {
+              "word": " Good",
+              "start": 0.0,
+              "end": 0.46,
+              "probability": 0.40008875727653503
+            },
+            {
+              "word": " morning,",
+              "start": 0.46,
+              "end": 1.16,
+              "probability": 0.8418757319450378
+            },
+            {
+              "word": " I",
+              "start": 1.44,
+              "end": 1.8,
+              "probability": 0.6576746702194214
+            },
+            {
+              "word": " had",
+              "start": 1.8,
+              "end": 2.44,
+              "probability": 0.8290834426879883
+            },
+            {
+              "word": " a",
+              "start": 2.44,
+              "end": 3.08,
+              "probability": 0.5586972832679749
+            },
+            {
+              "word": " favorite",
+              "start": 3.08,
+              "end": 4.0,
+              "probability": 0.6711562275886536
+            },
+            {
+              "word": " breakfast,",
+              "start": 4.0,
+              "end": 4.74,
+              "probability": 0.9830856323242188
+            },
+            {
+              "word": " Upma,",
+              "start": 5.14,
+              "end": 5.4,
+              "probability": 0.6843627989292145
+            },
+            {
+              "word": " which",
+              "start": 5.62,
+              "end": 5.86,
+              "probability": 0.917763888835907
+            },
+            {
+              "word": " is",
+              "start": 5.86,
+              "end": 6.0,
+              "probability": 0.9784044623374939
+            },
+            {
+              "word": " made",
+              "start": 6.0,
+              "end": 6.32,
+              "probability": 0.9333837032318115
+            },
+            {
+              "word": " of",
+              "start": 6.32,
+              "end": 6.72,
+              "probability": 0.9333569407463074
+            },
+            {
+              "word": " Upma",
+              "start": 6.72,
+              "end": 7.08,
+              "probability": 0.9145613014698029
+            },
+            {
+              "word": " Rawal.",
+              "start": 7.08,
+              "end": 7.66,
+              "probability": 0.6132285073399544
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 8.64,
+          "end": 15.18,
+          "text": " This is one of our favorite breakfasts in our home. We will do it almost once in two days.",
+          "tokens": [
+            50764,
+            639,
+            307,
+            472,
+            295,
+            527,
+            2954,
+            8201,
+            82,
+            294,
+            527,
+            1280,
+            13,
+            492,
+            486,
+            360,
+            309,
+            1920,
+            1564,
+            294,
+            732,
+            1708,
+            13,
+            51164
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.2744036515553792,
+          "compression_ratio": 1.6064516129032258,
+          "no_speech_prob": 0.04940742999315262,
+          "words": [
+            {
+              "word": " This",
+              "start": 8.64,
+              "end": 9.18,
+              "probability": 0.9855135083198547
+            },
+            {
+              "word": " is",
+              "start": 9.18,
+              "end": 9.44,
+              "probability": 0.9922211766242981
+            },
+            {
+              "word": " one",
+              "start": 9.44,
+              "end": 9.68,
+              "probability": 0.9936254024505615
+            },
+            {
+              "word": " of",
+              "start": 9.68,
+              "end": 9.94,
+              "probability": 0.9980188608169556
+            },
+            {
+              "word": " our",
+              "start": 9.94,
+              "end": 10.18,
+              "probability": 0.9663103818893433
+            },
+            {
+              "word": " favorite",
+              "start": 10.18,
+              "end": 10.74,
+              "probability": 0.9452276229858398
+            },
+            {
+              "word": " breakfasts",
+              "start": 10.74,
+              "end": 11.46,
+              "probability": 0.8017111718654633
+            },
+            {
+              "word": " in",
+              "start": 11.46,
+              "end": 11.62,
+              "probability": 0.9526407718658447
+            },
+            {
+              "word": " our",
+              "start": 11.62,
+              "end": 11.8,
+              "probability": 0.986303985118866
+            },
+            {
+              "word": " home.",
+              "start": 11.8,
+              "end": 12.28,
+              "probability": 0.9242810010910034
+            },
+            {
+              "word": " We",
+              "start": 12.36,
+              "end": 12.5,
+              "probability": 0.9880048632621765
+            },
+            {
+              "word": " will",
+              "start": 12.5,
+              "end": 12.74,
+              "probability": 0.6784055233001709
+            },
+            {
+              "word": " do",
+              "start": 12.74,
+              "end": 12.9,
+              "probability": 0.993160605430603
+            },
+            {
+              "word": " it",
+              "start": 12.9,
+              "end": 13.18,
+              "probability": 0.9873490333557129
+            },
+            {
+              "word": " almost",
+              "start": 13.18,
+              "end": 13.66,
+              "probability": 0.9239929914474487
+            },
+            {
+              "word": " once",
+              "start": 13.66,
+              "end": 14.34,
+              "probability": 0.9937610030174255
+            },
+            {
+              "word": " in",
+              "start": 14.34,
+              "end": 14.66,
+              "probability": 0.9942455887794495
+            },
+            {
+              "word": " two",
+              "start": 14.66,
+              "end": 14.94,
+              "probability": 0.804466962814331
+            },
+            {
+              "word": " days.",
+              "start": 14.94,
+              "end": 15.18,
+              "probability": 0.997489333152771
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 16.18,
+          "end": 22.34,
+          "text": " The people in the home will demand we want Upma, we want Upma for every two days,",
+          "tokens": [
+            51164,
+            440,
+            561,
+            294,
+            264,
+            1280,
+            486,
+            4733,
+            321,
+            528,
+            5858,
+            1696,
+            11,
+            321,
+            528,
+            5858,
+            1696,
+            337,
+            633,
+            732,
+            1708,
+            11,
+            51514
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.2744036515553792,
+          "compression_ratio": 1.6064516129032258,
+          "no_speech_prob": 0.04940742999315262,
+          "words": [
+            {
+              "word": " The",
+              "start": 16.18,
+              "end": 16.44,
+              "probability": 0.9425906538963318
+            },
+            {
+              "word": " people",
+              "start": 16.44,
+              "end": 16.78,
+              "probability": 0.9983515739440918
+            },
+            {
+              "word": " in",
+              "start": 16.78,
+              "end": 17.1,
+              "probability": 0.993389368057251
+            },
+            {
+              "word": " the",
+              "start": 17.1,
+              "end": 17.26,
+              "probability": 0.958255410194397
+            },
+            {
+              "word": " home",
+              "start": 17.26,
+              "end": 17.56,
+              "probability": 0.9896681308746338
+            },
+            {
+              "word": " will",
+              "start": 17.56,
+              "end": 17.82,
+              "probability": 0.9437029957771301
+            },
+            {
+              "word": " demand",
+              "start": 17.82,
+              "end": 18.38,
+              "probability": 0.9878732562065125
+            },
+            {
+              "word": " we",
+              "start": 18.38,
+              "end": 18.6,
+              "probability": 0.45330384373664856
+            },
+            {
+              "word": " want",
+              "start": 18.6,
+              "end": 18.88,
+              "probability": 0.9633364081382751
+            },
+            {
+              "word": " Upma,",
+              "start": 18.88,
+              "end": 19.4,
+              "probability": 0.9338164925575256
+            },
+            {
+              "word": " we",
+              "start": 19.52,
+              "end": 19.62,
+              "probability": 0.9672485589981079
+            },
+            {
+              "word": " want",
+              "start": 19.62,
+              "end": 19.94,
+              "probability": 0.9923747181892395
+            },
+            {
+              "word": " Upma",
+              "start": 19.94,
+              "end": 20.34,
+              "probability": 0.9856342673301697
+            },
+            {
+              "word": " for",
+              "start": 20.34,
+              "end": 20.66,
+              "probability": 0.9147974848747253
+            },
+            {
+              "word": " every",
+              "start": 20.66,
+              "end": 21.62,
+              "probability": 0.8650529384613037
+            },
+            {
+              "word": " two",
+              "start": 21.62,
+              "end": 21.96,
+              "probability": 0.9822884798049927
+            },
+            {
+              "word": " days,",
+              "start": 21.96,
+              "end": 22.34,
+              "probability": 0.9970661997795105
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 2234,
+          "start": 22.34,
+          "end": 29.88,
+          "text": " especially Sundays, the default breakfast is Upma, they want to do it only Upma.",
+          "tokens": [
+            50364,
+            2318,
+            44857,
+            11,
+            264,
+            7576,
+            8201,
+            307,
+            5858,
+            1696,
+            11,
+            436,
+            528,
+            281,
+            360,
+            309,
+            787,
+            5858,
+            1696,
+            13,
+            50764
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.22853372313759543,
+          "compression_ratio": 1.0389610389610389,
+          "no_speech_prob": 0.49315035343170166,
+          "words": [
+            {
+              "word": " especially",
+              "start": 22.34,
+              "end": 23.52,
+              "probability": 0.6650020480155945
+            },
+            {
+              "word": " Sundays,",
+              "start": 23.52,
+              "end": 24.14,
+              "probability": 0.9101383686065674
+            },
+            {
+              "word": " the",
+              "start": 25.14,
+              "end": 25.34,
+              "probability": 0.6567212343215942
+            },
+            {
+              "word": " default",
+              "start": 25.34,
+              "end": 26.28,
+              "probability": 0.7155223488807678
+            },
+            {
+              "word": " breakfast",
+              "start": 26.28,
+              "end": 26.76,
+              "probability": 0.9468733072280884
+            },
+            {
+              "word": " is",
+              "start": 26.76,
+              "end": 27.26,
+              "probability": 0.9434230327606201
+            },
+            {
+              "word": " Upma,",
+              "start": 27.26,
+              "end": 27.82,
+              "probability": 0.40782746160402894
+            },
+            {
+              "word": " they",
+              "start": 27.96,
+              "end": 28.06,
+              "probability": 0.965132474899292
+            },
+            {
+              "word": " want",
+              "start": 28.06,
+              "end": 28.38,
+              "probability": 0.9848780035972595
+            },
+            {
+              "word": " to",
+              "start": 28.38,
+              "end": 28.6,
+              "probability": 0.9849354028701782
+            },
+            {
+              "word": " do",
+              "start": 28.6,
+              "end": 28.8,
+              "probability": 0.8775580525398254
+            },
+            {
+              "word": " it",
+              "start": 28.8,
+              "end": 28.98,
+              "probability": 0.9857673645019531
+            },
+            {
+              "word": " only",
+              "start": 28.98,
+              "end": 29.26,
+              "probability": 0.598360538482666
+            },
+            {
+              "word": " Upma.",
+              "start": 29.26,
+              "end": 29.88,
+              "probability": 0.7464591264724731
+            }
+          ]
+        }
+      ],
+      "language": "en"
+    },
+    {
+      "text": " Today's weather is very rainy and it's very cool but Uppma brings happiness in our lives. Since it was so it is rainy and weather it creates Uppma. After Uppma we got energized. So weather is cold. Uppma brings happiness in our lives.",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 9.76,
+          "text": " Today's weather is very rainy and it's very cool but Uppma brings happiness in our lives.",
+          "tokens": [
+            50364,
+            2692,
+            311,
+            5503,
+            307,
+            588,
+            27181,
+            293,
+            309,
+            311,
+            588,
+            1627,
+            457,
+            624,
+            427,
+            1696,
+            5607,
+            8324,
+            294,
+            527,
+            2909,
+            13,
+            50864
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.37799442348195544,
+          "compression_ratio": 1.683453237410072,
+          "no_speech_prob": 0.03200733661651611,
+          "words": [
+            {
+              "word": " Today's",
+              "start": 0.0,
+              "end": 1.42,
+              "probability": 0.7721706628799438
+            },
+            {
+              "word": " weather",
+              "start": 1.42,
+              "end": 1.66,
+              "probability": 0.981113076210022
+            },
+            {
+              "word": " is",
+              "start": 1.66,
+              "end": 2.3,
+              "probability": 0.9870768189430237
+            },
+            {
+              "word": " very",
+              "start": 2.3,
+              "end": 2.82,
+              "probability": 0.797838568687439
+            },
+            {
+              "word": " rainy",
+              "start": 2.82,
+              "end": 4.26,
+              "probability": 0.9574883580207825
+            },
+            {
+              "word": " and",
+              "start": 4.26,
+              "end": 4.78,
+              "probability": 0.8911800384521484
+            },
+            {
+              "word": " it's",
+              "start": 4.78,
+              "end": 5.0,
+              "probability": 0.672584280371666
+            },
+            {
+              "word": " very",
+              "start": 5.0,
+              "end": 5.2,
+              "probability": 0.9923190474510193
+            },
+            {
+              "word": " cool",
+              "start": 5.2,
+              "end": 5.9,
+              "probability": 0.5838662385940552
+            },
+            {
+              "word": " but",
+              "start": 5.9,
+              "end": 7.08,
+              "probability": 0.5534537434577942
+            },
+            {
+              "word": " Uppma",
+              "start": 7.08,
+              "end": 7.5,
+              "probability": 0.3803538382053375
+            },
+            {
+              "word": " brings",
+              "start": 7.5,
+              "end": 7.9,
+              "probability": 0.9864473342895508
+            },
+            {
+              "word": " happiness",
+              "start": 7.9,
+              "end": 8.44,
+              "probability": 0.8227103352546692
+            },
+            {
+              "word": " in",
+              "start": 8.44,
+              "end": 8.92,
+              "probability": 0.9906864762306213
+            },
+            {
+              "word": " our",
+              "start": 8.92,
+              "end": 9.16,
+              "probability": 0.9949665665626526
+            },
+            {
+              "word": " lives.",
+              "start": 9.16,
+              "end": 9.76,
+              "probability": 0.6060764193534851
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "seek": 0,
+          "start": 9.98,
+          "end": 13.98,
+          "text": " Since it was so it is rainy and weather it creates Uppma.",
+          "tokens": [
+            50864,
+            4162,
+            309,
+            390,
+            370,
+            309,
+            307,
+            27181,
+            293,
+            5503,
+            309,
+            7829,
+            624,
+            427,
+            1696,
+            13,
+            51064
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.37799442348195544,
+          "compression_ratio": 1.683453237410072,
+          "no_speech_prob": 0.03200733661651611,
+          "words": [
+            {
+              "word": " Since",
+              "start": 9.98,
+              "end": 10.12,
+              "probability": 0.7438662648200989
+            },
+            {
+              "word": " it",
+              "start": 10.12,
+              "end": 10.42,
+              "probability": 0.9768427610397339
+            },
+            {
+              "word": " was",
+              "start": 10.42,
+              "end": 10.6,
+              "probability": 0.7877825498580933
+            },
+            {
+              "word": " so",
+              "start": 10.6,
+              "end": 10.96,
+              "probability": 0.3073290288448334
+            },
+            {
+              "word": " it",
+              "start": 10.96,
+              "end": 11.14,
+              "probability": 0.623684287071228
+            },
+            {
+              "word": " is",
+              "start": 11.14,
+              "end": 11.32,
+              "probability": 0.8810893893241882
+            },
+            {
+              "word": " rainy",
+              "start": 11.32,
+              "end": 11.68,
+              "probability": 0.931626558303833
+            },
+            {
+              "word": " and",
+              "start": 11.68,
+              "end": 12.14,
+              "probability": 0.8459692001342773
+            },
+            {
+              "word": " weather",
+              "start": 12.14,
+              "end": 12.68,
+              "probability": 0.6248950958251953
+            },
+            {
+              "word": " it",
+              "start": 12.68,
+              "end": 13.0,
+              "probability": 0.23197175562381744
+            },
+            {
+              "word": " creates",
+              "start": 13.0,
+              "end": 13.3,
+              "probability": 0.6201419234275818
+            },
+            {
+              "word": " Uppma.",
+              "start": 13.3,
+              "end": 13.98,
+              "probability": 0.8852471113204956
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "seek": 0,
+          "start": 14.74,
+          "end": 17.22,
+          "text": " After Uppma we got energized.",
+          "tokens": [
+            51064,
+            2381,
+            624,
+            427,
+            1696,
+            321,
+            658,
+            49231,
+            13,
+            51264
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.37799442348195544,
+          "compression_ratio": 1.683453237410072,
+          "no_speech_prob": 0.03200733661651611,
+          "words": [
+            {
+              "word": " After",
+              "start": 14.74,
+              "end": 14.98,
+              "probability": 0.8233655691146851
+            },
+            {
+              "word": " Uppma",
+              "start": 14.98,
+              "end": 15.78,
+              "probability": 0.977983554204305
+            },
+            {
+              "word": " we",
+              "start": 15.78,
+              "end": 16.1,
+              "probability": 0.8692216873168945
+            },
+            {
+              "word": " got",
+              "start": 16.1,
+              "end": 16.52,
+              "probability": 0.7985644936561584
+            },
+            {
+              "word": " energized.",
+              "start": 16.52,
+              "end": 17.22,
+              "probability": 0.5273155570030212
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "seek": 0,
+          "start": 17.82,
+          "end": 21.8,
+          "text": " So weather is cold. Uppma brings happiness in our lives.",
+          "tokens": [
+            51264,
+            407,
+            5503,
+            307,
+            3554,
+            13,
+            624,
+            427,
+            1696,
+            5607,
+            8324,
+            294,
+            527,
+            2909,
+            13,
+            51464
+          ],
+          "temperature": 0.0,
+          "avg_logprob": -0.37799442348195544,
+          "compression_ratio": 1.683453237410072,
+          "no_speech_prob": 0.03200733661651611,
+          "words": [
+            {
+              "word": " So",
+              "start": 17.82,
+              "end": 18.26,
+              "probability": 0.8138740658760071
+            },
+            {
+              "word": " weather",
+              "start": 18.26,
+              "end": 18.52,
+              "probability": 0.6293953061103821
+            },
+            {
+              "word": " is",
+              "start": 18.52,
+              "end": 18.8,
+              "probability": 0.9932370781898499
+            },
+            {
+              "word": " cold.",
+              "start": 18.8,
+              "end": 19.18,
+              "probability": 0.5300690531730652
+            },
+            {
+              "word": " Uppma",
+              "start": 19.48,
+              "end": 19.78,
+              "probability": 0.9825857480367025
+            },
+            {
+              "word": " brings",
+              "start": 19.78,
+              "end": 20.18,
+              "probability": 0.7895891666412354
+            },
+            {
+              "word": " happiness",
+              "start": 20.18,
+              "end": 20.76,
+              "probability": 0.996669352054596
+            },
+            {
+              "word": " in",
+              "start": 20.76,
+              "end": 21.08,
+              "probability": 0.7245204448699951
+            },
+            {
+              "word": " our",
+              "start": 21.08,
+              "end": 21.36,
+              "probability": 0.9887458682060242
+            },
+            {
+              "word": " lives.",
+              "start": 21.36,
+              "end": 21.8,
+              "probability": 0.7350950837135315
+            }
+          ]
+        }
+      ],
+      "language": "en"
+    }
+  ],
+  "transcribed_text": "Good morning, I had a favorite breakfast, Upma, which is made of Upma Rawal. This is one of our favorite breakfasts in our home. We will do it almost once in two days. The people in the home will demand we want Upma, we want Upma for every two days, especially Sundays, the default breakfast is Upma, they want to do it only Upma.Today's weather is very rainy and it's very cool but Uppma brings happiness in our lives. Since it was so it is rainy and weather it creates Uppma. After Uppma we got energized. So weather is cold. Uppma brings happiness in our lives."
 }

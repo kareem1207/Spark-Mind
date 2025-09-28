@@ -83,7 +83,7 @@ def run_pipeline(scores: dict[str, int], audio_path: list[str], sentiment_dir: O
 
 
 if __name__ == "__main__":
-	audio_path: list[str] = ["D:/ForeKnow/backend/uploads/audio_q1.webm", "D:/ForeKnow/backend/uploads/audio_q2.webm", "D:/ForeKnow/backend/uploads/audio_q3.webm","D:/ForeKnow/backend/uploads/audio_q4.webm"]
+	audio_path: list[str] = ["D:/Spark Mind/backend/uploads/audio_q1.webm", "D:/Spark Mind/backend/uploads/audio_q2.webm", "D:/Spark Mind/backend/uploads/audio_q3.webm","D:/Spark Mind/backend/uploads/audio_q4.webm"]
 	sentiment_dir: str = "D:/Models/Sentiment"
 	try:
 		scores: dict[str, int] = {

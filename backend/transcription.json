@@ -1,91 +1,387 @@
 {
-    "text": " so, right ? i did not break broadcast during ...",
+    "text": " Today's weather is very rainy and it's very cool but Uppma brings happiness in our lives. Since it was so it is rainy and weather it creates Uppma. After Uppma we got energized. So weather is cold. Uppma brings happiness in our lives.",
     "segments": [
         {
             "id": 0,
             "seek": 0,
             "start": 0.0,
-            "end": 3.54,
-            "text": " so, right ? i did not break broadcast during ...",
+            "end": 9.76,
+            "text": " Today's weather is very rainy and it's very cool but Uppma brings happiness in our lives.",
             "tokens": [
-                50412,
-                370,
-                11,
-                558,
-                2506,
-                741,
-                630,
-                406,
-                1821,
-                9975,
-                1830,
-                1097,
-                50667
+                50364,
+                2692,
+                311,
+                5503,
+                307,
+                588,
+                27181,
+                293,
+                309,
+                311,
+                588,
+                1627,
+                457,
+                624,
+                427,
+                1696,
+                5607,
+                8324,
+                294,
+                527,
+                2909,
+                13,
+                50864
             ],
-            "temperature": 1.0,
-            "avg_logprob": -4.14787346976144,
-            "compression_ratio": 0.8888888888888888,
-            "no_speech_prob": 0.29871729016304016,
+            "temperature": 0.0,
+            "avg_logprob": -0.37799442348195544,
+            "compression_ratio": 1.683453237410072,
+            "no_speech_prob": 0.03200733661651611,
             "words": [
                 {
-                    "word": " so,",
+                    "word": " Today's",
                     "start": 0.0,
-                    "end": 0.94,
-                    "probability": 0.19404758512973785
+                    "end": 1.42,
+                    "probability": 0.7721706628799438
                 },
                 {
-                    "word": " right",
-                    "start": 1.22,
-                    "end": 1.44,
-                    "probability": 0.01929979771375656
+                    "word": " weather",
+                    "start": 1.42,
+                    "end": 1.66,
+                    "probability": 0.981113076210022
                 },
                 {
-                    "word": " ?",
-                    "start": 1.44,
-                    "end": 1.76,
-                    "probability": 0.0006960139144212008
+                    "word": " is",
+                    "start": 1.66,
+                    "end": 2.3,
+                    "probability": 0.9870768189430237
                 },
                 {
-                    "word": " i",
-                    "start": 1.76,
-                    "end": 1.76,
-                    "probability": 0.23782935738563538
+                    "word": " very",
+                    "start": 2.3,
+                    "end": 2.82,
+                    "probability": 0.797838568687439
                 },
                 {
-                    "word": " did",
-                    "start": 1.76,
-                    "end": 1.92,
-                    "probability": 0.49726566672325134
+                    "word": " rainy",
+                    "start": 2.82,
+                    "end": 4.26,
+                    "probability": 0.9574883580207825
                 },
                 {
-                    "word": " not",
-                    "start": 1.92,
-                    "end": 2.14,
-                    "probability": 0.9675406217575073
+                    "word": " and",
+                    "start": 4.26,
+                    "end": 4.78,
+                    "probability": 0.8911800384521484
                 },
                 {
-                    "word": " break",
-                    "start": 2.14,
-                    "end": 2.48,
-                    "probability": 0.04303210973739624
+                    "word": " it's",
+                    "start": 4.78,
+                    "end": 5.0,
+                    "probability": 0.672584280371666
                 },
                 {
-                    "word": " broadcast",
-                    "start": 2.48,
-                    "end": 2.9,
-                    "probability": 3.2980846299324185e-05
+                    "word": " very",
+                    "start": 5.0,
+                    "end": 5.2,
+                    "probability": 0.9923190474510193
                 },
                 {
-                    "word": " during",
-                    "start": 2.9,
-                    "end": 3.28,
-                    "probability": 0.003760558320209384
+                    "word": " cool",
+                    "start": 5.2,
+                    "end": 5.9,
+                    "probability": 0.5838662385940552
                 },
                 {
-                    "word": " ...",
-                    "start": 3.28,
-                    "end": 3.54,
-                    "probability": 0.0003926961508113891
+                    "word": " but",
+                    "start": 5.9,
+                    "end": 7.08,
+                    "probability": 0.5534537434577942
+                },
+                {
+                    "word": " Uppma",
+                    "start": 7.08,
+                    "end": 7.5,
+                    "probability": 0.3803538382053375
+                },
+                {
+                    "word": " brings",
+                    "start": 7.5,
+                    "end": 7.9,
+                    "probability": 0.9864473342895508
+                },
+                {
+                    "word": " happiness",
+                    "start": 7.9,
+                    "end": 8.44,
+                    "probability": 0.8227103352546692
+                },
+                {
+                    "word": " in",
+                    "start": 8.44,
+                    "end": 8.92,
+                    "probability": 0.9906864762306213
+                },
+                {
+                    "word": " our",
+                    "start": 8.92,
+                    "end": 9.16,
+                    "probability": 0.9949665665626526
+                },
+                {
+                    "word": " lives.",
+                    "start": 9.16,
+                    "end": 9.76,
+                    "probability": 0.6060764193534851
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 9.98,
+            "end": 13.98,
+            "text": " Since it was so it is rainy and weather it creates Uppma.",
+            "tokens": [
+                50864,
+                4162,
+                309,
+                390,
+                370,
+                309,
+                307,
+                27181,
+                293,
+                5503,
+                309,
+                7829,
+                624,
+                427,
+                1696,
+                13,
+                51064
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.37799442348195544,
+            "compression_ratio": 1.683453237410072,
+            "no_speech_prob": 0.03200733661651611,
+            "words": [
+                {
+                    "word": " Since",
+                    "start": 9.98,
+                    "end": 10.12,
+                    "probability": 0.7438662648200989
+                },
+                {
+                    "word": " it",
+                    "start": 10.12,
+                    "end": 10.42,
+                    "probability": 0.9768427610397339
+                },
+                {
+                    "word": " was",
+                    "start": 10.42,
+                    "end": 10.6,
+                    "probability": 0.7877825498580933
+                },
+                {
+                    "word": " so",
+                    "start": 10.6,
+                    "end": 10.96,
+                    "probability": 0.3073290288448334
+                },
+                {
+                    "word": " it",
+                    "start": 10.96,
+                    "end": 11.14,
+                    "probability": 0.623684287071228
+                },
+                {
+                    "word": " is",
+                    "start": 11.14,
+                    "end": 11.32,
+                    "probability": 0.8810893893241882
+                },
+                {
+                    "word": " rainy",
+                    "start": 11.32,
+                    "end": 11.68,
+                    "probability": 0.931626558303833
+                },
+                {
+                    "word": " and",
+                    "start": 11.68,
+                    "end": 12.14,
+                    "probability": 0.8459692001342773
+                },
+                {
+                    "word": " weather",
+                    "start": 12.14,
+                    "end": 12.68,
+                    "probability": 0.6248950958251953
+                },
+                {
+                    "word": " it",
+                    "start": 12.68,
+                    "end": 13.0,
+                    "probability": 0.23197175562381744
+                },
+                {
+                    "word": " creates",
+                    "start": 13.0,
+                    "end": 13.3,
+                    "probability": 0.6201419234275818
+                },
+                {
+                    "word": " Uppma.",
+                    "start": 13.3,
+                    "end": 13.98,
+                    "probability": 0.8852471113204956
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "seek": 0,
+            "start": 14.74,
+            "end": 17.22,
+            "text": " After Uppma we got energized.",
+            "tokens": [
+                51064,
+                2381,
+                624,
+                427,
+                1696,
+                321,
+                658,
+                49231,
+                13,
+                51264
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.37799442348195544,
+            "compression_ratio": 1.683453237410072,
+            "no_speech_prob": 0.03200733661651611,
+            "words": [
+                {
+                    "word": " After",
+                    "start": 14.74,
+                    "end": 14.98,
+                    "probability": 0.8233655691146851
+                },
+                {
+                    "word": " Uppma",
+                    "start": 14.98,
+                    "end": 15.78,
+                    "probability": 0.977983554204305
+                },
+                {
+                    "word": " we",
+                    "start": 15.78,
+                    "end": 16.1,
+                    "probability": 0.8692216873168945
+                },
+                {
+                    "word": " got",
+                    "start": 16.1,
+                    "end": 16.52,
+                    "probability": 0.7985644936561584
+                },
+                {
+                    "word": " energized.",
+                    "start": 16.52,
+                    "end": 17.22,
+                    "probability": 0.5273155570030212
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "seek": 0,
+            "start": 17.82,
+            "end": 21.8,
+            "text": " So weather is cold. Uppma brings happiness in our lives.",
+            "tokens": [
+                51264,
+                407,
+                5503,
+                307,
+                3554,
+                13,
+                624,
+                427,
+                1696,
+                5607,
+                8324,
+                294,
+                527,
+                2909,
+                13,
+                51464
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.37799442348195544,
+            "compression_ratio": 1.683453237410072,
+            "no_speech_prob": 0.03200733661651611,
+            "words": [
+                {
+                    "word": " So",
+                    "start": 17.82,
+                    "end": 18.26,
+                    "probability": 0.8138740658760071
+                },
+                {
+                    "word": " weather",
+                    "start": 18.26,
+                    "end": 18.52,
+                    "probability": 0.6293953061103821
+                },
+                {
+                    "word": " is",
+                    "start": 18.52,
+                    "end": 18.8,
+                    "probability": 0.9932370781898499
+                },
+                {
+                    "word": " cold.",
+                    "start": 18.8,
+                    "end": 19.18,
+                    "probability": 0.5300690531730652
+                },
+                {
+                    "word": " Uppma",
+                    "start": 19.48,
+                    "end": 19.78,
+                    "probability": 0.9825857480367025
+                },
+                {
+                    "word": " brings",
+                    "start": 19.78,
+                    "end": 20.18,
+                    "probability": 0.7895891666412354
+                },
+                {
+                    "word": " happiness",
+                    "start": 20.18,
+                    "end": 20.76,
+                    "probability": 0.996669352054596
+                },
+                {
+                    "word": " in",
+                    "start": 20.76,
+                    "end": 21.08,
+                    "probability": 0.7245204448699951
+                },
+                {
+                    "word": " our",
+                    "start": 21.08,
+                    "end": 21.36,
+                    "probability": 0.9887458682060242
+                },
+                {
+                    "word": " lives.",
+                    "start": 21.36,
+                    "end": 21.8,
+                    "probability": 0.7350950837135315
                 }
             ]
         }

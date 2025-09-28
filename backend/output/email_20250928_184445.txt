@@ -1,0 +1,17 @@
+```text
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate your time and effort.
+
+The assessment suggests potential areas of concern in memory and speech. Specifically, we observed lower scores in the Memory Game and Image Recall tasks. Additionally, speech analysis indicated a high pause density and limited lexical diversity, although this was based on a very short speech sample. The Stroop Colour score requires further context for interpretation. On a positive note, sentiment analysis showed a positive outlook.
+
+These findings do not constitute a diagnosis, but we recommend further evaluation to gain a more comprehensive understanding. We suggest scheduling a neuropsychological evaluation, providing a detailed medical history, and considering a speech-language pathology consultation. Repeating the cognitive games after familiarization might also be beneficial.
+
+*DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.*
+
+Taking proactive steps to understand and support your cognitive health is a valuable investment in your overall well-being.
+
+Sincerely,
+
+The Cognitive Assessment Team
+```

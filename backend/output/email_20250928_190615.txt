@@ -1,0 +1,17 @@
+Subject: Cognitive Assessment Results
+
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate your participation.
+
+Your results indicate a mixed cognitive profile. While your Stroop Colour test suggests good cognitive processing speed and the Image Recall score indicates adequate visual memory, there are some areas of concern. Specifically, your Memory Game score, pause density in speech, repeated words, and lexical diversity suggest potential areas for further evaluation. The sentiment analysis of your speech was positive.
+
+As a next step, we recommend consulting with a healthcare provider for a comprehensive neurological examination and further cognitive testing. A speech and language evaluation may also be beneficial.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps for your cognitive health is always a worthwhile endeavor.
+
+Sincerely,
+
+Patient Engagement Email Agent
