@@ -1,0 +1,17 @@
+Subject: Thank you for completing the Cognitive Assessment
+
+Dear User,
+
+Thank you for taking the time to complete our cognitive assessment. We appreciate your participation.
+
+Based on your results, we've observed potential areas for further consideration, specifically concerning image recall and memory recall. Your image recall score was low, and your memory recall score was moderate. Additionally, your Stroop Colour score requires comparison with age-adjusted norms for proper interpretation. It's important to note that the absence of speech and sentiment data limited a more comprehensive analysis. The overall cognitive risk is assessed as mild.
+
+We recommend consulting with a qualified healthcare professional for a comprehensive neuropsychological evaluation to fully understand these findings. Further medical review and potentially a speech and language assessment might also be beneficial.
+
+DISCLAIMER: This is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps for your cognitive health is a positive move.
+
+Sincerely,
+
+The Patient Engagement Team

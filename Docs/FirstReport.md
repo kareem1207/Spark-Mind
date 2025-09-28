@@ -1,8 +1,8 @@
-# Spark Mind – Technical Analysis and Report
+# Early Spark – Technical Analysis and Report
 
 ## Overview
 
-This report documents the current state of the Spark Mind repository based on the files present in the workspace. The codebase is in an early stage and contains:
+This report documents the current state of the Early Spark repository based on the files present in the workspace. The codebase is in an early stage and contains:
 
 - A minimal backend (Python) with a scoring utility for a memory game and a placeholder entry point.
 - A very simple frontend (static HTML welcome page).
@@ -24,7 +24,7 @@ The primary implemented logic resides in `backend/MemoryGameScore.py`, which pro
         - `sample.txt` – a small text file likely used in testing.
         - `transcription.json` – Whisper output containing text, segments, tokens, word-level timings, and probabilities.
 - `frontend/`
-  - `index.html` – static "Welcome to Spark Mind" page with simple styling.
+  - `index.html` – static "Welcome to Early Spark" page with simple styling.
 - `database/` – currently empty.
 - `Docs/FirstReport.md` – this report.
 
@@ -236,5 +236,5 @@ These allow optional post-processing formulas like:
 
 ## Conclusion
 
-Spark Mind currently contains a foundational scoring utility and early ASR experiments. Formalizing the scoring rules, exposing an API, and integrating the transcription pipeline will turn the repository into a functional prototype. The suggestions above outline a low-risk path from this baseline to an end-to-end, testable application.
+Early Spark currently contains a foundational scoring utility and early ASR experiments. Formalizing the scoring rules, exposing an API, and integrating the transcription pipeline will turn the repository into a functional prototype. The suggestions above outline a low-risk path from this baseline to an end-to-end, testable application.
 

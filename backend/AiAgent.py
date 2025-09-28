@@ -53,7 +53,7 @@ def run_pipeline(scores: dict[str, int], audio_path: list[str], sentiment_dir: O
 	print("[STAGE] Generating PDF...")
 	PDFGenerator.generate_pdf(
 		logo_path=os.path.join(os.path.dirname(__file__), "public", "logo.jpg"),
-		title="Spark Mind", 
+		title="Early Spark", 
 		doctor_report=doctor_report, 
 		output_path=pdf_path, 
 		disclaimer=disclaimer,
@@ -83,13 +83,13 @@ def run_pipeline(scores: dict[str, int], audio_path: list[str], sentiment_dir: O
 
 
 if __name__ == "__main__":
-	audio_path: list[str] = ["D:/Spark Mind/backend/uploads/audio_q1.webm", "D:/Spark Mind/backend/uploads/audio_q2.webm", "D:/Spark Mind/backend/uploads/audio_q3.webm","D:/Spark Mind/backend/uploads/audio_q4.webm"]
+	audio_path: list[str] = ["D:/Early Spark/backend/uploads/audio_q1.webm", "D:/Early Spark/backend/uploads/audio_q2.webm", "D:/Early Spark/backend/uploads/audio_q3.webm","D:/Early Spark/backend/uploads/audio_q4.webm"]
 	sentiment_dir: str = "D:/Models/Sentiment"
 	try:
 		scores: dict[str, int] = {
-			"stroop_colour": 10,
-			"memory_game": 23,
-			"image_recall": 15,
+			"stroop_colour": 30,
+			"memory_game": 33,
+			"image_recall": 1,
 		}
 		result = run_pipeline(scores=scores, audio_path=audio_path, sentiment_dir=sentiment_dir, offline_sentiment=False)
 		print("[SUCCESS] Pipeline finished.")

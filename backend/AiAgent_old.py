@@ -1,5 +1,5 @@
 """
-Spark Mind AI Agent - Refactored with Class-Based Architecture
+Early Spark AI Agent - Refactored with Class-Based Architecture
 
 This module provides cognitive assessment capabilities using AI agents and fallback mechanisms.
 The code has been refactored into logical classes for better maintainability and debugging:
@@ -199,7 +199,7 @@ This automated screening provides initial cognitive performance indicators. The 
 		"""Generate a fallback email when AI services are unavailable"""
 		return f"""Dear Valued User,
 
-Thank you for completing the Spark Mind cognitive assessment. Your comprehensive screening has been successfully processed, analyzing multiple cognitive domains including memory performance, attention control, and speech patterns.
+Thank you for completing the Early Spark cognitive assessment. Your comprehensive screening has been successfully processed, analyzing multiple cognitive domains including memory performance, attention control, and speech patterns.
 
 Your assessment results are now available for review. While our advanced AI analysis services experienced temporary availability issues, we've ensured your core assessment data has been safely processed and preserved.
 
@@ -212,10 +212,10 @@ Key assessment areas covered:
 
 We recommend discussing these results with your healthcare provider for professional interpretation and guidance on next steps.
 
-Thank you for choosing Spark Mind for your cognitive health screening.
+Thank you for choosing Early Spark for your cognitive health screening.
 
 Best regards,
-The Spark Mind Team
+The Early Spark Team
 
 {disclaimer}"""
 
@@ -679,7 +679,7 @@ def run_pipeline(audio_path: list[str], sentiment_dir: Optional[str] = None, off
 
 	PDFGenerator.generate_pdf(
 		logo_path=os.path.join(os.path.dirname(__file__), "public", "logo.jpg"),
-		title="Spark Mind", doctor_report=doctor_report or "Report generation failed", output_path=pdf_path, disclaimer=disclaimer,
+		title="Early Spark", doctor_report=doctor_report or "Report generation failed", output_path=pdf_path, disclaimer=disclaimer,
 	)
 	with open(summary_path, "w", encoding="utf-8") as sf:
 		sf.write(summary_text or "Summary generation failed")
@@ -708,7 +708,7 @@ def run_pipeline(audio_path: list[str], sentiment_dir: Optional[str] = None, off
 
 
 if __name__ == "__main__":
-	audio_path:list[str] = ["D:/Spark Mind/backend/audio/audio.mp3", "D:/Spark Mind/backend/audio/audio2.mp3", "D:/Spark Mind/backend/audio/speech.webm"]
+	audio_path:list[str] = ["D:/Early Spark/backend/audio/audio.mp3", "D:/Early Spark/backend/audio/audio2.mp3", "D:/Early Spark/backend/audio/speech.webm"]
 	sentiment_dir:str = "D:/Models/Sentiment"
 	try:
 		result = run_pipeline(audio_path, sentiment_dir, offline_sentiment=False)

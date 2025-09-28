@@ -1,8 +1,8 @@
-# Spark Mind - Dementia Early Detection System Architecture
+# Early Spark - Dementia Early Detection System Architecture
 
 ## Overview
 
-The Spark Mind system is a comprehensive web-based platform for early dementia detection through cognitive assessments. It combines four different cognitive games with AI-powered analysis to provide risk assessments and detailed reports.
+The Early Spark system is a comprehensive web-based platform for early dementia detection through cognitive assessments. It combines four different cognitive games with AI-powered analysis to provide risk assessments and detailed reports.
 
 ## System Architecture
 

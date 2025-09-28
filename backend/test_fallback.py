@@ -18,7 +18,7 @@ def test_fallback_functionality():
     """Test the AI pipeline with fallback mechanisms"""
     
     print("="*60)
-    print("TESTING SPARK MIND AI PIPELINE WITH FALLBACK SUPPORT")
+    print("TESTING Early Spark AI PIPELINE WITH FALLBACK SUPPORT")
     print("="*60)
     
     # Create some dummy audio files for testing

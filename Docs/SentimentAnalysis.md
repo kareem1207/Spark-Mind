@@ -89,4 +89,4 @@ Given an example text, the notebook prints:
 
 ## Conclusion
 
-The notebook establishes a clear, reproducible path from raw text to a probabilistic sentiment profile and a single interpretable score. With small adjustments (weight tuning, optional lighter model, and API wrapping), this can be promoted from a research notebook into a reliable component of the broader Spark Mind pipeline.
+The notebook establishes a clear, reproducible path from raw text to a probabilistic sentiment profile and a single interpretable score. With small adjustments (weight tuning, optional lighter model, and API wrapping), this can be promoted from a research notebook into a reliable component of the broader Early Spark pipeline.

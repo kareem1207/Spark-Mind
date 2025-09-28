@@ -347,7 +347,7 @@ graph TB
 ## File Structure Overview
 
 ```
-Spark Mind/
+Early Spark/
 ├── frontend/                    # Next.js Frontend Application
 │   ├── src/
 │   │   ├── app/                # App Router Pages
