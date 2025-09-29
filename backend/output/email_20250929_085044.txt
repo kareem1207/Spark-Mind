@@ -1,0 +1,19 @@
+Subject: Your Cognitive Assessment Results
+
+Dear User,
+
+Thank you for completing the cognitive assessment. We appreciate your participation.
+
+The results indicate potential difficulties in several areas. Specifically, the memory game score suggests a possible short-term memory impairment. The Stroop Colour score indicates a potential challenge with inhibitory control. Sentiment analysis suggests a shift towards negative sentiment, and speech analysis revealed high pause density. Please note that the speech fluency calculation may be unreliable and needs further validation.
+
+It's important to remember that this assessment is not a diagnosis.
+
+If you have concerns, we recommend consulting with a healthcare professional for a comprehensive evaluation. Further investigation may include a neuropsychological evaluation, speech and language assessment, and mood assessment.
+
+DISCLAIMER: It is a test done by AI; if the score is too high it is suggested to consult a doctor immediately, if not then also it is better to meet a doctor.
+
+Taking proactive steps towards understanding your cognitive health is a positive move.
+
+Sincerely,
+
+Patient Engagement Email Agent
